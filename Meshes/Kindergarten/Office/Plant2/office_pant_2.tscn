@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://cbosfae6vo35w"]
+
+[ext_resource type="ArrayMesh" uid="uid://btq83nlor64w" path="res://Meshes/Kindergarten/Office/Plant2/office_pant2_Cylinder-0.res" id="1_7lj44"]
+[ext_resource type="ArrayMesh" uid="uid://c7vxqrmoehlla" path="res://Meshes/Kindergarten/Office/Plant2/office_pant2_Plane.res" id="2_7dbxy"]
+
+[node name="office_pant2" type="Node3D"]
+
+[node name="Cylinder" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.18, 0, 0, 0, 0.18, 0, 0, 0, 0.18, 0, 0.18, 0)
+mesh = ExtResource("1_7lj44")
+skeleton = NodePath("")
+
+[node name="Plane" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3, 0)
+mesh = ExtResource("2_7dbxy")
+skeleton = NodePath("")

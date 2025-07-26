@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://dmdoycurmqrwx"]
+
+[ext_resource type="ArrayMesh" uid="uid://dr07b47dfe4q3" path="res://Meshes/Kindergarten/Restroom/Toilet/restroom_toilet_Cube_001-0.res" id="1_r2321"]
+[ext_resource type="ArrayMesh" uid="uid://3px62h4siduu" path="res://Meshes/Kindergarten/Restroom/Toilet/restroom_toilet_Cube_002.res" id="2_cusi2"]
+
+[node name="restroom_toilet" type="Node3D"]
+
+[node name="Toilet" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_r2321")
+skeleton = NodePath("")
+
+[node name="Chain" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.15, 1.56, -0.14)
+mesh = ExtResource("2_cusi2")
+skeleton = NodePath("")

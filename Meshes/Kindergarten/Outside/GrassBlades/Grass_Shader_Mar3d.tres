@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://b4ucwf27p03me"]
+
+[ext_resource type="Material" uid="uid://egkdc8s0jhj6" path="res://Meshes/Kindergarten/Outside/GrassBlades/Grasss_Shader_Mat.tres" id="1_3yiq4"]
+
+[resource]
+next_pass = ExtResource("1_3yiq4")
+transparency = 1
+cull_mode = 2
+albedo_color = Color(0.47921, 0.559679, 0.281953, 1)

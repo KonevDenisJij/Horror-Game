@@ -1,0 +1,55 @@
+[{
+	"CharacterId": "BULLY_GIRL",
+	"ReplyId": 1,
+	"CharacterTextKey": "BULLY_DAY1_MORNING_DIALOGUE1",
+	"RepliesMoveSpeed": 1.0,
+	"RepliesMovePattern": 1,
+	"ReplyOptions": [
+		{
+			"Order": 1,
+			"TextKey": "BULLY_DAY1_MORNING_DIALOGUE1_REPLY1",
+			"SignalName": "DialogueFinish(2)",
+			"ReplyMood": 1
+		},
+		{
+			"Order": 2,
+			"TextKey": "BULLY_DAY1_MORNING_DIALOGUE1_REPLY2",
+			"SignalName": "DialogueFinish(2)",
+			"ReplyMood": 1
+		},
+		{
+			"Order": 3,
+			"TextKey": "BULLY_DAY1_MORNING_DIALOGUE1_REPLY3",
+			"SignalName": "DialogueFinish(2)",
+			"ReplyMood": 1
+		}
+	]
+},
+{
+	"CharacterId": "BULLY_GIRL",
+	"ReplyId": 2,
+	"CharacterTextKey": "A [color=red]net[/color] takogo dialoga durachek",
+	"RepliesMoveSpeed": 1.0,
+	"RepliesMovePattern": 1,
+	"ReplyOptions": [
+		{
+			"Order": 1,
+			"TextKey": "BULLY_DAY1_MORNING_DIALOGUE1_REPLY1",
+			"SignalName": "DialogueFinish(2)",
+			"ReplyMood": 1
+		},
+		{
+			"Order": 2,
+			"TextKey": "BULLY_DAY1_MORNING_DIALOGUE1_REPLY2",
+			"SignalName": "DialogueFinish(2)",
+			"ReplyMood": 1
+		},
+		{
+			"Order": 3,
+			"TextKey": "BULLY_DAY1_MORNING_DIALOGUE1_REPLY3",
+			"SignalName": "DialogueFinish(2)",
+			"ReplyMood": 1
+		}
+	]
+}
+]

@@ -1,0 +1,19 @@
+[gd_resource type="StandardMaterial3D" load_steps=4 format=3 uid="uid://bbubclversbdr"]
+
+[ext_resource type="Texture2D" uid="uid://bg30gus0o3piq" path="res://Meshes/Kindergarten/Building/High/kindergartenSingleMesh_CeilingMat_High_Base-Color.png" id="1_ay7p1"]
+[ext_resource type="Texture2D" uid="uid://0h18fov451a0" path="res://Meshes/Kindergarten/Building/High/kindergartenSingleMesh_CeilingMat_High_AORoughMetall.png" id="2_dch4o"]
+[ext_resource type="Texture2D" uid="uid://cflnfbkphlobh" path="res://Meshes/Kindergarten/Building/High/kindergartenSingleMesh_CeilingMat_High_Normal.png" id="3_loldp"]
+
+[resource]
+resource_name = "CeilingMaterial"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_ay7p1")
+metallic = 1.0
+metallic_texture = ExtResource("2_dch4o")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("2_dch4o")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("3_loldp")
+ao_texture = ExtResource("2_dch4o")
+uv1_scale = Vector3(20, 20, 20)

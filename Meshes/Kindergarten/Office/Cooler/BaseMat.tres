@@ -1,0 +1,20 @@
+[gd_resource type="StandardMaterial3D" load_steps=4 format=3 uid="uid://dn302pdivn58c"]
+
+[ext_resource type="Texture2D" uid="uid://o7rf74qg57dd" path="res://Meshes/Kindergarten/Office/Cooler/office_coolerblend_BaseMat_Base-Color.png" id="1_me3mi"]
+[ext_resource type="Texture2D" uid="uid://bnij5ev1hkju4" path="res://Meshes/Kindergarten/Office/Cooler/office_coolerblend_BaseMat_AORoughMetall.png" id="2_8yiuu"]
+[ext_resource type="Texture2D" uid="uid://kv4rewpt0k3k" path="res://Meshes/Kindergarten/Office/Cooler/office_coolerblend_BaseMat_Normal.png" id="3_00y0l"]
+
+[resource]
+resource_name = "BaseMat"
+cull_mode = 2
+albedo_color = Color(0.906332, 0.906332, 0.906332, 1)
+albedo_texture = ExtResource("1_me3mi")
+metallic = 1.0
+metallic_texture = ExtResource("2_8yiuu")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("2_8yiuu")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("3_00y0l")
+ao_enabled = true
+ao_texture = ExtResource("2_8yiuu")

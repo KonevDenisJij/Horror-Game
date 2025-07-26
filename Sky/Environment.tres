@@ -1,0 +1,70 @@
+[gd_resource type="Environment" load_steps=6 format=3 uid="uid://b4qmiups88n7k"]
+
+[ext_resource type="Shader" uid="uid://fjtw6ecso0fs" path="res://Sky/Sky.gdshader" id="1_ispcl"]
+
+[sub_resource type="Gradient" id="Gradient_pwjdm"]
+offsets = PackedFloat32Array(0, 0.107317, 0.890244, 1)
+colors = PackedColorArray(0, 0, 0, 1, 0.088, 0.0949667, 0.11, 1, 0.83, 0.741467, 0.664, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_1dlvo"]
+gradient = SubResource("Gradient_pwjdm")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_tt47v"]
+shader = ExtResource("1_ispcl")
+shader_parameter/day_top_color = Color(0.470588, 0.631373, 0.815686, 1)
+shader_parameter/day_bottom_color = Color(0.6, 0.729412, 0.878431, 1)
+shader_parameter/sunset_top_color = Color(0.7, 0.75, 1, 1)
+shader_parameter/sunset_bottom_color = Color(1, 0.564706, 0.388235, 1)
+shader_parameter/night_top_color = Color(0.02, 0, 0.04, 1)
+shader_parameter/night_bottom_color = Color(0.1, 0, 0.2, 1)
+shader_parameter/horizon_color = Color(0, 0, 0, 1)
+shader_parameter/horizon_blur = 0.05
+shader_parameter/sun_color = Color(10, 8, 1, 1)
+shader_parameter/sun_sunset_color = Color(10, 0, 0, 1)
+shader_parameter/sun_size = 0.2
+shader_parameter/sun_blur = 10.0
+shader_parameter/moon_color = Color(1, 0.95, 0.7, 1)
+shader_parameter/moon_size = 0.06
+shader_parameter/moon_blur = 0.1
+shader_parameter/clouds_edge_color = Color(0.705882, 0.788235, 0.937255, 1)
+shader_parameter/clouds_top_color = Color(1, 1, 1, 1)
+shader_parameter/clouds_middle_color = Color(0.878431, 0.890196, 0.929412, 1)
+shader_parameter/clouds_bottom_color = Color(1, 1, 1, 1)
+shader_parameter/clouds_speed = 2.0
+shader_parameter/clouds_direction = 0.2
+shader_parameter/clouds_scale = 3.0
+shader_parameter/clouds_cutoff = 0.3
+shader_parameter/clouds_fuzziness = 0.5
+shader_parameter/clouds_weight = 0.0
+shader_parameter/clouds_blur = 0.25
+shader_parameter/stars_speed = 1.0
+shader_parameter/overwritten_time = 0.0
+
+[sub_resource type="Sky" id="Sky_007pj"]
+sky_material = SubResource("ShaderMaterial_tt47v")
+
+[resource]
+background_mode = 2
+background_color = Color(0.74902, 0.74902, 0.74902, 1)
+sky = SubResource("Sky_007pj")
+tonemap_mode = 2
+tonemap_exposure = 0.2
+tonemap_white = 2.0
+ssao_enabled = true
+ssao_radius = 6.0
+ssao_intensity = 3.0
+ssil_enabled = true
+glow_enabled = true
+glow_levels/1 = 1.0
+glow_levels/2 = 1.0
+glow_levels/4 = 1.0
+glow_levels/6 = 1.0
+glow_levels/7 = 1.0
+glow_normalized = true
+glow_intensity = 0.1
+glow_blend_mode = 1
+fog_enabled = true
+fog_sky_affect = 0.0
+volumetric_fog_density = 0.0071
+adjustment_enabled = true
+adjustment_color_correction = SubResource("GradientTexture1D_1dlvo")

@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://bloq384a64ikv"]
+
+[ext_resource type="ArrayMesh" uid="uid://8rere40irxdu" path="res://Meshes/Kindergarten/Corridor/Lamp/corridor_lamp_Cube.res" id="1_okedk"]
+[ext_resource type="ArrayMesh" uid="uid://rx7j3ft76g6d" path="res://Meshes/Kindergarten/Corridor/Lamp/corridor_lamp_Cylinder.res" id="2_3cr61"]
+
+[node name="corridor_lamp" type="Node3D"]
+
+[node name="Lamp" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_okedk")
+skeleton = NodePath("")
+
+[node name="Light" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -1.19209e-07, 1, 0, -1, -1.19209e-07, 0, 0, 0)
+layers = 524288
+mesh = ExtResource("2_3cr61")
+skeleton = NodePath("")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.451794, 0)
+light_color = Color(1, 1, 0.85098, 1)
+light_energy = 10.0
+shadow_enabled = true
+shadow_caster_mask = 4294443007
+omni_range = 7.0

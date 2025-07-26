@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://bjhe451yh5mwl"]
+
+[ext_resource type="Script" uid="uid://cdsl3vwmwqoux" path="res://Scripts/Dialogue/ReplyOptionButton.cs" id="1_qpywv"]
+
+[node name="ReplyOptionButton" type="Button"]
+custom_minimum_size = Vector2(150, 90)
+anchors_preset = -1
+anchor_right = 0.078125
+anchor_bottom = 0.0833333
+grow_horizontal = 2
+grow_vertical = 2
+theme_type_variation = &"DialogueOptionButton"
+text = "TestText"
+autowrap_mode = 3
+script = ExtResource("1_qpywv")
+metadata/_edit_use_anchors_ = true

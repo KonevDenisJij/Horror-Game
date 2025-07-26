@@ -1,0 +1,17 @@
+[{
+	"CharacterId": "BULLY_GIRL",
+	"DialogueId": 1,
+	"TextKey": "BULLY_DAY1_MORNING_DIALOGUE1",
+	"SignalName": "ReplyStart(1)",
+	"TextAppearenceSpeed": 1.0,
+	"CharacterSpeechMood": "Angry"
+},
+{
+	"CharacterId": "BULLY_GIRL",
+	"DialogueId": 2,
+	"TextKey": "A [color=red]net[/color] takogo dialoga durachek",
+	"SignalName": "DialogueFinish(1)",
+	"TextAppearenceSpeed": 1.0,
+	"CharacterSpeechMood": ""
+}
+]

@@ -1,0 +1,44 @@
+[gd_scene load_steps=5 format=3 uid="uid://bt4ogmlq2ymhv"]
+
+[ext_resource type="Script" path="res://Scripts/CarLevel/CarBall.cs" id="1_eo1jx"]
+[ext_resource type="PackedScene" uid="uid://c42kf8any2bgo" path="res://Scenes/CarLevel/TestCar.blend" id="1_oi4ms"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_mpn3f"]
+bounce = 0.2
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_rybjw"]
+radius = 1.0
+
+[node name="TestCarBall" type="Node3D" node_paths=PackedStringArray("_ball", "_carMesh", "_groundRay", "_cameraPivot", "_camera")]
+script = ExtResource("1_eo1jx")
+_ball = NodePath("Ball")
+_carMesh = NodePath("TestCar")
+_groundRay = NodePath("TestCar/RayCast3D")
+_cameraPivot = NodePath("CameraPivot")
+_camera = NodePath("CameraPivot/MainCamera")
+
+[node name="Ball" type="RigidBody3D" parent="."]
+physics_material_override = SubResource("PhysicsMaterial_mpn3f")
+gravity_scale = 10.0
+angular_damp = 5.0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ball"]
+shape = SubResource("SphereShape3D_rybjw")
+
+[node name="TestCar" parent="." instance=ExtResource("1_oi4ms")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, -1, 0)
+
+[node name="RayCast3D" type="RayCast3D" parent="TestCar"]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 0, 0.389891, 0)
+
+[node name="CameraPivot" type="Node3D" parent="."]
+top_level = true
+
+[node name="MainCamera" type="Camera3D" parent="CameraPivot"]
+transform = Transform3D(1, 0, 0, 0, 0.965926, 0.258819, 0, -0.258819, 0.965926, 0, 5, 9)
+current = true
+
+[node name="ReverseCamera" type="Camera3D" parent="CameraPivot"]
+transform = Transform3D(-1, 2.26267e-08, -8.44439e-08, 0, 0.965926, 0.258819, 8.74228e-08, 0.258819, -0.965926, 0, 5, -9)
+
+[editable path="TestCar"]

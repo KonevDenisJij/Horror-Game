@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://drftjpqk28cyk"]
+
+[ext_resource type="Script" uid="uid://b87cm0xdwu77s" path="res://Scripts/Dialogue/DialogueSystem.cs" id="1_swopp"]
+
+[node name="DialogueSystem" type="Node3D"]
+script = ExtResource("1_swopp")

@@ -1,0 +1,153 @@
+[gd_scene format=3 uid="uid://bqsvi40fqfdli"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 137.0
+offset_top = 58.0
+offset_right = 187.0
+offset_bottom = 81.0
+text = "DialogueSystem:"
+
+[node name="Label4" type="Label" parent="."]
+layout_mode = 0
+offset_left = 137.0
+offset_top = 109.0
+offset_right = 230.0
+offset_bottom = 132.0
+text = "DialogueId"
+
+[node name="Label15" type="Label" parent="."]
+layout_mode = 0
+offset_left = 137.0
+offset_top = 132.0
+offset_right = 230.0
+offset_bottom = 155.0
+text = "TextAppearenceSpeed"
+
+[node name="Label16" type="Label" parent="."]
+layout_mode = 0
+offset_left = 137.0
+offset_top = 446.0
+offset_right = 310.0
+offset_bottom = 469.0
+text = "Replies Move Speed"
+
+[node name="Label6" type="Label" parent="."]
+layout_mode = 0
+offset_left = 137.0
+offset_top = 155.0
+offset_right = 187.0
+offset_bottom = 178.0
+text = "TextId"
+
+[node name="Label19" type="Label" parent="."]
+layout_mode = 0
+offset_left = 137.0
+offset_top = 178.0
+offset_right = 187.0
+offset_bottom = 201.0
+text = "CharacterSpeechMood"
+
+[node name="Label7" type="Label" parent="."]
+layout_mode = 0
+offset_left = 137.0
+offset_top = 203.0
+offset_right = 1158.0
+offset_bottom = 226.0
+text = "SignalName (Завершить диалог, автоматически перейти к следующей фразе персонажа, перейти на ответы игрока (по айди)"
+
+[node name="Label3" type="Label" parent="."]
+layout_mode = 0
+offset_left = 137.0
+offset_top = 349.0
+offset_right = 266.0
+offset_bottom = 372.0
+text = "RepliesSystem:"
+
+[node name="Label5" type="Label" parent="."]
+layout_mode = 0
+offset_left = 137.0
+offset_top = 418.0
+offset_right = 230.0
+offset_bottom = 441.0
+text = "Reply Id"
+
+[node name="Label18" type="Label" parent="."]
+layout_mode = 0
+offset_left = 137.0
+offset_top = 469.0
+offset_right = 230.0
+offset_bottom = 492.0
+text = "Replies Move Pattern"
+
+[node name="Label12" type="Label" parent="."]
+layout_mode = 0
+offset_left = 137.0
+offset_top = 372.0
+offset_right = 230.0
+offset_bottom = 395.0
+text = "CharacerId"
+
+[node name="Label14" type="Label" parent="."]
+layout_mode = 0
+offset_left = 137.0
+offset_top = 395.0
+offset_right = 230.0
+offset_bottom = 418.0
+text = "CharacerTextId"
+
+[node name="Label13" type="Label" parent="."]
+layout_mode = 0
+offset_left = 137.0
+offset_top = 81.0
+offset_right = 230.0
+offset_bottom = 104.0
+text = "CharacerId"
+
+[node name="Label8" type="Label" parent="."]
+layout_mode = 0
+offset_left = 137.0
+offset_top = 498.0
+offset_right = 197.0
+offset_bottom = 521.0
+text = "Replies:"
+
+[node name="Label10" type="Label" parent="."]
+layout_mode = 0
+offset_left = 266.0
+offset_top = 498.0
+offset_right = 316.0
+offset_bottom = 521.0
+text = "TextId"
+
+[node name="Label11" type="Label" parent="."]
+layout_mode = 0
+offset_left = 266.0
+offset_top = 536.0
+offset_right = 316.0
+offset_bottom = 559.0
+text = "Order"
+
+[node name="Label17" type="Label" parent="."]
+layout_mode = 0
+offset_left = 267.0
+offset_top = 608.0
+offset_right = 317.0
+offset_bottom = 631.0
+text = "Reply Mood (Color of the cloud)"
+
+[node name="Label9" type="Label" parent="."]
+layout_mode = 0
+offset_left = 266.0
+offset_top = 571.0
+offset_right = 1287.0
+offset_bottom = 594.0
+text = "SignalName (Завершить диалог, автоматически перейти к следующей фразе персонажа, перейти на ответы игрока (по айди)"

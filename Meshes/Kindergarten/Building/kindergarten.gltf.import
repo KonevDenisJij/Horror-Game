@@ -1,0 +1,245 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://giu4e7vp2igp"
+valid=false
+
+[deps]
+
+source_file="res://Meshes/Kindergarten/Building/kindergarten.gltf"
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=false
+nodes/use_node_type_suffixes=true
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+animation/import_rest_as_RESET=false
+import_script/path=""
+_subresources={
+"materials": {
+"BathroomTiles": {
+"use_external/enabled": true,
+"use_external/path": "res://Meshes/Kindergarten/Textures/BathroomTiles.tres"
+},
+"BathroomTilesFloorMat": {
+"use_external/enabled": true,
+"use_external/path": "res://Meshes/Kindergarten/Textures/BathroomTilesFloorMat.tres"
+},
+"BedroomWallsMat": {
+"use_external/enabled": true,
+"use_external/path": "res://Meshes/Kindergarten/Textures/BedroomWallsMat.tres"
+},
+"BricksMat": {
+"use_external/enabled": true,
+"use_external/path": "res://Meshes/Kindergarten/Textures/BricksMat.tres"
+},
+"CabinetBottomMat": {
+"use_external/enabled": true,
+"use_external/path": "res://Meshes/Kindergarten/Textures/CabinetBottomMat.tres"
+},
+"CabinetFloorMat": {
+"use_external/enabled": true,
+"use_external/path": "res://Meshes/Kindergarten/Textures/CabinetFloorMat.tres"
+},
+"Carpet": {
+"use_external/enabled": true,
+"use_external/path": "res://Meshes/Kindergarten/Textures/Carpet.tres"
+},
+"CeilingMaterial": {
+"use_external/enabled": true,
+"use_external/path": "res://Meshes/Kindergarten/Textures/CeilingMaterial.tres"
+},
+"CoridorMatBottom": {
+"use_external/enabled": true,
+"use_external/path": "res://Meshes/Kindergarten/Textures/CoridorMatBottom.tres"
+},
+"Glass": {
+"use_external/enabled": true,
+"use_external/path": "res://Meshes/Kindergarten/Textures/Glass.tres"
+},
+"KitchenFloorMaterial": {
+"use_external/enabled": true,
+"use_external/path": "res://Meshes/Kindergarten/Textures/KitchenFloorMaterial.tres"
+},
+"KitchenTilesMat": {
+"use_external/enabled": true,
+"use_external/path": "res://Meshes/Kindergarten/Textures/KitchenTilesMat.tres"
+},
+"LinoleumMat": {
+"use_external/enabled": true,
+"use_external/path": "res://Meshes/Kindergarten/Textures/LinoleumMat.tres"
+},
+"MetalLegs": {
+"use_external/enabled": true,
+"use_external/path": "res://Meshes/Kindergarten/Textures/MetalLegs.tres"
+},
+"PantyroomFloor": {
+"use_external/enabled": true,
+"use_external/path": "res://Meshes/Kindergarten/Textures/PantyroomFloor.tres"
+},
+"PantyroomWallMat": {
+"use_external/enabled": true,
+"use_external/path": "res://Meshes/Kindergarten/Textures/PantyroomWallMat.tres"
+},
+"PlasticDoor": {
+"use_external/enabled": true,
+"use_external/path": "res://Meshes/Kindergarten/Textures/PlasticDoor.tres"
+},
+"PlayRoomTiledFloor": {
+"use_external/enabled": true,
+"use_external/path": "res://Meshes/Kindergarten/Textures/PlayRoomTiledFloor.tres"
+},
+"PlayroomFloor": {
+"use_external/enabled": true,
+"use_external/path": "res://Meshes/Kindergarten/Textures/PlayroomFloor.tres"
+},
+"PlayroomWallsMat": {
+"use_external/enabled": true,
+"use_external/path": "res://Meshes/Kindergarten/Textures/PlayroomWallsMat.tres"
+},
+"RoofMat": {
+"use_external/enabled": true,
+"use_external/path": "res://Meshes/Kindergarten/Textures/RoofMat.tres"
+},
+"WallsStandartMat": {
+"use_external/enabled": true,
+"use_external/path": "res://Meshes/Kindergarten/Textures/WallsStandartMat.tres"
+},
+"WindowsMaterial": {
+"use_external/enabled": true,
+"use_external/path": "res://Meshes/Kindergarten/Textures/WindowsMaterial.tres"
+}
+},
+"meshes": {
+"kindergarten_Cube_002": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Meshes/Kindergarten/Textures/kindergarten_Cube_002.res"
+},
+"kindergarten_Cube_003": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Meshes/Kindergarten/Textures/kindergarten_Cube_003.res"
+},
+"kindergarten_Cube_004": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Meshes/Kindergarten/Textures/kindergarten_Cube_004.res"
+},
+"kindergarten_Cube_005": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Meshes/Kindergarten/Textures/kindergarten_Cube_005.res"
+},
+"kindergarten_Cube_006-0": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Meshes/Kindergarten/Textures/kindergarten_Cube_006-0.res"
+},
+"kindergarten_Cube_010-0": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Meshes/Kindergarten/Textures/kindergarten_Cube_010-0.res"
+},
+"kindergarten_Cube_016-0": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Meshes/Kindergarten/Textures/kindergarten_Cube_016-0.res"
+},
+"kindergarten_Cube_018-0": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Meshes/Kindergarten/Textures/kindergarten_Cube_018-0.res"
+},
+"kindergarten_Cube_020-0": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Meshes/Kindergarten/Textures/kindergarten_Cube_020-0.res"
+},
+"kindergarten_Cube_023-0": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Meshes/Kindergarten/Textures/kindergarten_Cube_023-0.res"
+},
+"kindergarten_Cube_025-0": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Meshes/Kindergarten/Textures/kindergarten_Cube_025-0.res"
+},
+"kindergarten_Cube_026-0": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Meshes/Kindergarten/Textures/kindergarten_Cube_026-0.res"
+},
+"kindergarten_Cube_027-0": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Meshes/Kindergarten/Textures/kindergarten_Cube_027-0.res"
+},
+"kindergarten_Cube_053-0": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Meshes/Kindergarten/Textures/kindergarten_Cube_053-0.res"
+}
+}
+}
+gltf/naming_version=1
+gltf/embedded_image_handling=1

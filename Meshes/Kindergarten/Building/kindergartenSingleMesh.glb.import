@@ -1,0 +1,246 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://bdcyqq0bvla2i"
+path="res://.godot/imported/kindergartenSingleMesh.glb-846ca5bb27128e4afad00b1b7c63742b.scn"
+
+[deps]
+
+source_file="res://Meshes/Kindergarten/Building/kindergartenSingleMesh.glb"
+dest_files=["res://.godot/imported/kindergartenSingleMesh.glb-846ca5bb27128e4afad00b1b7c63742b.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=false
+nodes/use_node_type_suffixes=true
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+animation/import_rest_as_RESET=false
+import_script/path=""
+_subresources={
+"materials": {
+"BathroomTiles": {
+"use_external/enabled": true,
+"use_external/path": "res://Meshes/Kindergarten/Building/High/BathroomTiles.tres"
+},
+"BathroomTilesFloorMat": {
+"use_external/enabled": true,
+"use_external/path": "res://Meshes/Kindergarten/Building/High/BathroomTilesFloorMat.tres"
+},
+"BedroomWallsMat": {
+"use_external/enabled": true,
+"use_external/path": "res://Meshes/Kindergarten/Building/High/BedroomWallsMat.tres"
+},
+"BricksMat": {
+"use_external/enabled": true,
+"use_external/path": "res://Meshes/Kindergarten/Building/High/BricksMat.tres"
+},
+"CabinetBottomMat": {
+"use_external/enabled": true,
+"use_external/path": "res://Meshes/Kindergarten/Building/High/CabinetBottomMat.tres"
+},
+"CabinetFloorMat": {
+"use_external/enabled": true,
+"use_external/path": "res://Meshes/Kindergarten/Building/High/CabinetFloorMat.tres"
+},
+"Carpet": {
+"use_external/enabled": true,
+"use_external/path": "res://Meshes/Kindergarten/Building/High/Carpet.tres"
+},
+"CeilingMaterial": {
+"use_external/enabled": true,
+"use_external/path": "res://Meshes/Kindergarten/Building/High/CeilingMaterial.tres"
+},
+"CoridorMatBottom": {
+"use_external/enabled": true,
+"use_external/path": "res://Meshes/Kindergarten/Building/High/CoridorMatBottom.tres"
+},
+"Glass": {
+"use_external/enabled": true,
+"use_external/path": "res://Meshes/Kindergarten/Building/High/Glass.tres"
+},
+"KitchenFloorMaterial": {
+"use_external/enabled": true,
+"use_external/path": "res://Meshes/Kindergarten/Building/High/KitchenFloorMaterial.tres"
+},
+"KitchenTilesMat": {
+"use_external/enabled": true,
+"use_external/path": "res://Meshes/Kindergarten/Building/High/KitchenTilesMat.tres"
+},
+"LinoleumMat": {
+"use_external/enabled": true,
+"use_external/path": "res://Meshes/Kindergarten/Building/High/LinoleumMat.tres"
+},
+"MetalLegs": {
+"use_external/enabled": true,
+"use_external/path": "res://Meshes/Kindergarten/Building/High/MetalLegs.tres"
+},
+"PantyroomFloor": {
+"use_external/enabled": true,
+"use_external/path": "res://Meshes/Kindergarten/Building/High/PantyroomFloor.tres"
+},
+"PantyroomWallMat": {
+"use_external/enabled": true,
+"use_external/path": "res://Meshes/Kindergarten/Building/High/PantyroomWallMat.tres"
+},
+"PlasticDoor": {
+"use_external/enabled": true,
+"use_external/path": "res://Meshes/Kindergarten/Building/High/PlasticDoor.tres"
+},
+"PlayRoomTiledFloor": {
+"use_external/enabled": true,
+"use_external/path": "res://Meshes/Kindergarten/Building/High/PlayRoomTiledFloor.tres"
+},
+"PlayroomFloor": {
+"use_external/enabled": true,
+"use_external/path": "res://Meshes/Kindergarten/Building/High/PlayroomFloor.tres"
+},
+"PlayroomWallsMat": {
+"use_external/enabled": true,
+"use_external/path": "res://Meshes/Kindergarten/Building/High/PlayroomWallsMat.tres"
+},
+"RoofMat": {
+"use_external/enabled": true,
+"use_external/path": "res://Meshes/Kindergarten/Building/High/RoofMat.tres"
+},
+"WallsStandartMat": {
+"use_external/enabled": true,
+"use_external/path": "res://Meshes/Kindergarten/Building/High/WallsStandartMat.tres"
+},
+"WindowsMaterial": {
+"use_external/enabled": true,
+"use_external/path": "res://Meshes/Kindergarten/Building/High/WindowsMaterial.tres"
+}
+},
+"meshes": {
+"kindergartenSingleMesh_Cube_001": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Meshes/Kindergarten/Building/kindergartenSingleMesh_Cube_001.res"
+},
+"kindergartenSingleMesh_Cube_005": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Meshes/Kindergarten/Building/kindergartenSingleMesh_Cube_005.res"
+},
+"kindergartenSingleMesh_Cube_006": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Meshes/Kindergarten/Building/kindergartenSingleMesh_Cube_006.res"
+},
+"kindergartenSingleMesh_Cube_007": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Meshes/Kindergarten/Building/kindergartenSingleMesh_Cube_007.res"
+},
+"kindergartenSingleMesh_Cube_008": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Meshes/Kindergarten/Building/kindergartenSingleMesh_Cube_008.res"
+},
+"kindergartenSingleMesh_Cube_010": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Meshes/Kindergarten/Building/kindergartenSingleMesh_Cube_010.res"
+},
+"kindergartenSingleMesh_Cube_016": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Meshes/Kindergarten/Building/kindergartenSingleMesh_Cube_016.res"
+},
+"kindergartenSingleMesh_Cube_018": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Meshes/Kindergarten/Building/kindergartenSingleMesh_Cube_018.res"
+},
+"kindergartenSingleMesh_Cube_020": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Meshes/Kindergarten/Building/kindergartenSingleMesh_Cube_020.res"
+},
+"kindergartenSingleMesh_Cube_023": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Meshes/Kindergarten/Building/kindergartenSingleMesh_Cube_023.res"
+},
+"kindergartenSingleMesh_Cube_025": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Meshes/Kindergarten/Building/kindergartenSingleMesh_Cube_025.res"
+},
+"kindergartenSingleMesh_Cube_026": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Meshes/Kindergarten/Building/kindergartenSingleMesh_Cube_026.res"
+},
+"kindergartenSingleMesh_Cube_027": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Meshes/Kindergarten/Building/kindergartenSingleMesh_Cube_027.res"
+},
+"kindergartenSingleMesh_Cube_053": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Meshes/Kindergarten/Building/kindergartenSingleMesh_Cube_053.res"
+}
+}
+}
+gltf/naming_version=1
+gltf/embedded_image_handling=1

@@ -1,0 +1,19 @@
+[gd_resource type="StandardMaterial3D" load_steps=4 format=3 uid="uid://bbpm0rdswvjso"]
+
+[ext_resource type="Texture2D" uid="uid://bm3olhe5obwif" path="res://Meshes/Kindergarten/Office/Door/office_door_RedWood_Base-Color.png" id="1_k4hud"]
+[ext_resource type="Texture2D" uid="uid://cbq7sos5fkx8t" path="res://Meshes/Kindergarten/Office/Door/office_door_RedWood_AORoughMetall.png" id="2_7yheu"]
+[ext_resource type="Texture2D" uid="uid://bstkvwx7r8fei" path="res://Meshes/Kindergarten/Office/Door/office_door_RedWood_Normal.png" id="3_rxgfc"]
+
+[resource]
+resource_name = "RedWood"
+cull_mode = 2
+albedo_texture = ExtResource("1_k4hud")
+metallic = 1.0
+metallic_texture = ExtResource("2_7yheu")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("2_7yheu")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("3_rxgfc")
+ao_enabled = true
+ao_texture = ExtResource("2_7yheu")

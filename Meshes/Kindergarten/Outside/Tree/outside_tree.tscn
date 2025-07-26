@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://5yiuvqng56ub"]
+
+[ext_resource type="ArrayMesh" uid="uid://dmk3gxm3lgcgp" path="res://Meshes/Kindergarten/Outside/Tree/outside_tree_tree.res" id="1_j575g"]
+[ext_resource type="ArrayMesh" uid="uid://irs63bvbotqk" path="res://Meshes/Kindergarten/Outside/Tree/outside_tree_leaves.res" id="2_p8vcx"]
+
+[node name="outside_tree" type="Node3D"]
+
+[node name="tree" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_j575g")
+skeleton = NodePath("")
+
+[node name="leaves" type="MeshInstance3D" parent="tree"]
+mesh = ExtResource("2_p8vcx")
+skeleton = NodePath("")

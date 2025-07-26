@@ -1,0 +1,27 @@
+[gd_resource type="Theme" load_steps=5 format=3 uid="uid://bordlib3tkn4j"]
+
+[ext_resource type="Texture2D" uid="uid://c6xcxrro7v3iw" path="res://Textures/UI/Dialogue/CloudParticleNoSatur.png" id="1_ota51"]
+[ext_resource type="Texture2D" uid="uid://b5qum4mao6pib" path="res://Textures/UI/Dialogue/DialoguWindow.png" id="2_ota51"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wfqup"]
+texture = ExtResource("1_ota51")
+texture_margin_left = 15.0
+texture_margin_top = 15.0
+texture_margin_right = 15.0
+texture_margin_bottom = 15.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_it85y"]
+texture = ExtResource("2_ota51")
+expand_margin_left = 100.0
+expand_margin_top = 100.0
+expand_margin_right = 100.0
+expand_margin_bottom = 115.0
+modulate_color = Color(0.0722, 0.129137, 0.19, 0.784314)
+
+[resource]
+DialogueOptionButton/base_type = &"Button"
+DialogueOptionButton/colors/font_outline_color = Color(0.5, 0.5, 0.5, 1)
+DialogueOptionButton/constants/outline_size = 5
+DialogueOptionButton/styles/normal = SubResource("StyleBoxTexture_wfqup")
+DialogueWindow/base_type = &"PanelContainer"
+DialogueWindow/styles/panel = SubResource("StyleBoxTexture_it85y")

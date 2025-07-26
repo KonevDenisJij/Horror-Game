@@ -1,0 +1,20 @@
+[gd_resource type="StandardMaterial3D" load_steps=4 format=3 uid="uid://bf0cvdhyctgaw"]
+
+[ext_resource type="Texture2D" uid="uid://dqu7nlkj4uhb7" path="res://Meshes/Kindergarten/Restroom/Lamp/Lamp_Tsokol_Mat_Low_Base-Color.png" id="1_elxpw"]
+[ext_resource type="Texture2D" uid="uid://lx0lct5ppt4m" path="res://Meshes/Kindergarten/Restroom/Lamp/Lamp_Tsokol_Mat_Low_AORoughMetall.png" id="2_vm6s0"]
+[ext_resource type="Texture2D" uid="uid://dpm4fcm7y1qog" path="res://Meshes/Kindergarten/Restroom/Lamp/Lamp_Tsokol_Mat_Low_Normal.png" id="3_j5a75"]
+
+[resource]
+resource_name = "Tsokol_Mat"
+cull_mode = 2
+albedo_color = Color(0.906332, 0.906332, 0.906332, 1)
+albedo_texture = ExtResource("1_elxpw")
+metallic = 1.0
+metallic_texture = ExtResource("2_vm6s0")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("2_vm6s0")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("3_j5a75")
+ao_enabled = true
+ao_texture = ExtResource("2_vm6s0")

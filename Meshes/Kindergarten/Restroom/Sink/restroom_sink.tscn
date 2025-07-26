@@ -1,0 +1,43 @@
+[gd_scene load_steps=8 format=3 uid="uid://cetoo4f6qr1s"]
+
+[ext_resource type="ArrayMesh" uid="uid://ccqdbt7tk8jhb" path="res://Meshes/Kindergarten/Restroom/Sink/restroom_sink_Cube_002.res" id="1_xrcye"]
+[ext_resource type="ArrayMesh" uid="uid://d0pwn3qti8mlo" path="res://Meshes/Kindergarten/Restroom/Sink/restroom_sink_Cylinder_001.res" id="2_qrb4u"]
+[ext_resource type="ArrayMesh" uid="uid://bmal7r286gr3c" path="res://Meshes/Kindergarten/Restroom/Sink/restroom_sink_Cylinder_002.res" id="3_l66c0"]
+[ext_resource type="ArrayMesh" uid="uid://bbl88vghs1x27" path="res://Meshes/Kindergarten/Restroom/Sink/restroom_sink_Cylinder_003.res" id="4_oih1u"]
+[ext_resource type="ArrayMesh" uid="uid://bepu27nvty4fy" path="res://Meshes/Kindergarten/Restroom/Sink/restroom_sink_Cylinder_004.res" id="5_a0d1d"]
+[ext_resource type="ArrayMesh" uid="uid://bmqusd17ca7ia" path="res://Meshes/Kindergarten/Restroom/Sink/restroom_sink_Sphere.res" id="6_y3bny"]
+[ext_resource type="ArrayMesh" uid="uid://bpdywt21xhed2" path="res://Meshes/Kindergarten/Restroom/Sink/restroom_sink_Sphere_002.res" id="7_4rjst"]
+
+[node name="restroom_sink" type="Node3D"]
+
+[node name="Sink" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_xrcye")
+skeleton = NodePath("")
+
+[node name="Siphon" type="MeshInstance3D" parent="."]
+mesh = ExtResource("2_qrb4u")
+skeleton = NodePath("")
+
+[node name="Tap" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.045)
+mesh = ExtResource("3_l66c0")
+skeleton = NodePath("")
+
+[node name="FaucetBase_L" type="MeshInstance3D" parent="."]
+mesh = ExtResource("4_oih1u")
+skeleton = NodePath("")
+
+[node name="FaucetBase_R" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.12, 0.22, -0.2)
+mesh = ExtResource("5_a0d1d")
+skeleton = NodePath("")
+
+[node name="FaucetSwitch_L" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.12, 0.25, -0.2)
+mesh = ExtResource("6_y3bny")
+skeleton = NodePath("")
+
+[node name="FaucetSwitch_R" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.12, 0.25, -0.2)
+mesh = ExtResource("7_4rjst")
+skeleton = NodePath("")

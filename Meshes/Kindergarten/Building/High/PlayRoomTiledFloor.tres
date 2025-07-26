@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cinw3pyhteuwe"]
+
+[resource]
+resource_name = "PlayRoomTiledFloor"
+vertex_color_use_as_albedo = true
+metallic_texture_channel = 2
+roughness = 0.5
+roughness_texture_channel = 1
+normal_enabled = true
+ao_enabled = true

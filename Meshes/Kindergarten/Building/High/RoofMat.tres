@@ -1,0 +1,21 @@
+[gd_resource type="StandardMaterial3D" load_steps=4 format=3 uid="uid://dggb4yc4ocmno"]
+
+[ext_resource type="Texture2D" uid="uid://b8yk3fr3ueefo" path="res://Meshes/Kindergarten/Building/High/kindergartenSingleMesh_RoofMat_High_Base-Color.png" id="1_0c67w"]
+[ext_resource type="Texture2D" uid="uid://coqsfm1x1lt5b" path="res://Meshes/Kindergarten/Building/High/kindergartenSingleMesh_RoofMat_High_AORoughMetall.png" id="2_yqc0t"]
+[ext_resource type="Texture2D" uid="uid://cf2jst1lmynm4" path="res://Meshes/Kindergarten/Building/High/kindergartenSingleMesh_RoofMat_High_Normal.png" id="3_6hth7"]
+
+[resource]
+resource_name = "RoofMat"
+cull_mode = 2
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_0c67w")
+metallic = 1.0
+metallic_texture = ExtResource("2_yqc0t")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("2_yqc0t")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("3_6hth7")
+ao_enabled = true
+ao_texture = ExtResource("2_yqc0t")
+uv1_scale = Vector3(10, 10, 10)

@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://b838g7nciiknw"]
+
+[resource]
+resource_name = "Light_Map"
+cull_mode = 2
+roughness = 0.5
+emission_enabled = true
+emission = Color(1, 1, 0.886275, 1)
+emission_energy_multiplier = 16.0

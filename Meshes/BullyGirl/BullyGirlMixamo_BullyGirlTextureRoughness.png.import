@@ -1,0 +1,38 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://cqjo4i6qo3o0"
+path.s3tc="res://.godot/imported/BullyGirlMixamo_BullyGirlTextureRoughness.png-b90fe42f447bfce0af42443c27dde49f.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+generator_parameters={
+"md5": "673222e7c5a53c26e2cf3004979f8acf"
+}
+
+[deps]
+
+source_file="res://Meshes/BullyGirl/BullyGirlMixamo_BullyGirlTextureRoughness.png"
+dest_files=["res://.godot/imported/BullyGirlMixamo_BullyGirlTextureRoughness.png-b90fe42f447bfce0af42443c27dde49f.s3tc.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0

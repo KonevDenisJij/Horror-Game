@@ -1,0 +1,40 @@
+[gd_scene load_steps=5 format=3 uid="uid://cm4m3v4icyolg"]
+
+[ext_resource type="Script" uid="uid://dkbqkxupn5aa2" path="res://Scripts/Character/Player/Player.cs" id="1_1a42r"]
+[ext_resource type="ArrayMesh" uid="uid://b2b0thw3scyu2" path="res://Meshes/uploads_files_4106898_Asian+Boy.obj" id="2_n2tdt"]
+[ext_resource type="Script" uid="uid://y4ltgepffj5h" path="res://Scripts/Character/Player/HeadBobController.cs" id="3_bihjs"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_5boob"]
+radius = 0.420078
+height = 1.7499
+
+[node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("_camera", "_rotationHelper", "_rayCast")]
+collision_layer = 2
+collision_mask = 15
+script = ExtResource("1_1a42r")
+_speed = 3.0
+_jumpVelocity = 3.0
+_camera = NodePath("RotationHelper/HeadBobController/Camera")
+_rotationHelper = NodePath("RotationHelper")
+_rayCast = NodePath("RotationHelper/HeadBobController/Camera/RayCast3D")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.495, 0, 0, 0, 0.495, 0, 0, 0, 0.495, 0, 0.447703, 0)
+shape = SubResource("CapsuleShape3D_5boob")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.4, 0, -6.03983e-08, 0, 0.4, 0, 6.03983e-08, 0, -0.4, 0, 0, 0)
+mesh = ExtResource("2_n2tdt")
+
+[node name="RotationHelper" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.76793, 0)
+
+[node name="HeadBobController" type="Node3D" parent="RotationHelper"]
+script = ExtResource("3_bihjs")
+
+[node name="Camera" type="Camera3D" parent="RotationHelper/HeadBobController"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.0999999)
+
+[node name="RayCast3D" type="RayCast3D" parent="RotationHelper/HeadBobController/Camera"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.00015831, 0, -0.00423431)
+collision_mask = 44

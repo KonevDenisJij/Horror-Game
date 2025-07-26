@@ -1,0 +1,17 @@
+C:\USERS\MEGAH\DOCUMENTS\GODOT\HORRORGAME2\.godot\mono\temp\bin\Debug\HorrorGame2.deps.json
+C:\USERS\MEGAH\DOCUMENTS\GODOT\HORRORGAME2\.godot\mono\temp\bin\Debug\HorrorGame2.runtimeconfig.json
+C:\USERS\MEGAH\DOCUMENTS\GODOT\HORRORGAME2\.godot\mono\temp\bin\Debug\HorrorGame2.dll
+C:\USERS\MEGAH\DOCUMENTS\GODOT\HORRORGAME2\.godot\mono\temp\bin\Debug\HorrorGame2.pdb
+C:\USERS\MEGAH\DOCUMENTS\GODOT\HORRORGAME2\.godot\mono\temp\bin\Debug\GodotSharp.dll
+C:\USERS\MEGAH\DOCUMENTS\GODOT\HORRORGAME2\.godot\mono\temp\bin\Debug\GodotSharpEditor.dll
+C:\USERS\MEGAH\DOCUMENTS\GODOT\HORRORGAME2\.godot\mono\temp\obj\Debug\HorrorGame2.csproj.AssemblyReference.cache
+C:\USERS\MEGAH\DOCUMENTS\GODOT\HORRORGAME2\.godot\mono\temp\obj\Debug\HorrorGame2.GeneratedMSBuildEditorConfig.editorconfig
+C:\USERS\MEGAH\DOCUMENTS\GODOT\HORRORGAME2\.godot\mono\temp\obj\Debug\HorrorGame2.AssemblyInfoInputs.cache
+C:\USERS\MEGAH\DOCUMENTS\GODOT\HORRORGAME2\.godot\mono\temp\obj\Debug\HorrorGame2.AssemblyInfo.cs
+C:\USERS\MEGAH\DOCUMENTS\GODOT\HORRORGAME2\.godot\mono\temp\obj\Debug\HorrorGame2.csproj.CoreCompileInputs.cache
+C:\USERS\MEGAH\DOCUMENTS\GODOT\HORRORGAME2\.godot\mono\temp\obj\Debug\HorrorGame2.csproj.CopyComplete
+C:\USERS\MEGAH\DOCUMENTS\GODOT\HORRORGAME2\.godot\mono\temp\obj\Debug\HorrorGame2.dll
+C:\USERS\MEGAH\DOCUMENTS\GODOT\HORRORGAME2\.godot\mono\temp\obj\Debug\refint\HorrorGame2.dll
+C:\USERS\MEGAH\DOCUMENTS\GODOT\HORRORGAME2\.godot\mono\temp\obj\Debug\HorrorGame2.pdb
+C:\USERS\MEGAH\DOCUMENTS\GODOT\HORRORGAME2\.godot\mono\temp\obj\Debug\HorrorGame2.genruntimeconfig.cache
+C:\USERS\MEGAH\DOCUMENTS\GODOT\HORRORGAME2\.godot\mono\temp\obj\Debug\ref\HorrorGame2.dll

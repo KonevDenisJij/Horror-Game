@@ -1,0 +1,19 @@
+[gd_resource type="StandardMaterial3D" load_steps=4 format=3 uid="uid://bx26lpdjeeikt"]
+
+[ext_resource type="Texture2D" uid="uid://c8lc463mbh6e5" path="res://Meshes/Kindergarten/Corridor/Bench/High/bench_Metal_Mat_High_Base-Color.png" id="1_bv8ue"]
+[ext_resource type="Texture2D" uid="uid://bgntphnyc0fyi" path="res://Meshes/Kindergarten/Corridor/Bench/High/bench_Metal_Mat_High_AORoughMetall.png" id="2_vxy7s"]
+[ext_resource type="Texture2D" uid="uid://cjr0e4r15fvrh" path="res://Meshes/Kindergarten/Corridor/Bench/High/bench_Metal_Mat_High_Normal.png" id="3_tltpb"]
+
+[resource]
+resource_name = "Metal_Mat"
+cull_mode = 2
+albedo_texture = ExtResource("1_bv8ue")
+metallic = 1.0
+metallic_texture = ExtResource("2_vxy7s")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("2_vxy7s")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("3_tltpb")
+ao_enabled = true
+ao_texture = ExtResource("2_vxy7s")

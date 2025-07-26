@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://cyhj2ee3ebwkq"]
+
+[ext_resource type="Texture2D" uid="uid://dvpuo832gfn2d" path="res://Meshes/Kindergarten/Outside/Grass/GrassSplatMap.png" id="1_fkfat"]
+
+[resource]
+resource_name = "GrassSplatMap"
+cull_mode = 2
+albedo_color = Color(0.906332, 0.906332, 0.906332, 1)
+albedo_texture = ExtResource("1_fkfat")
+roughness = 0.5

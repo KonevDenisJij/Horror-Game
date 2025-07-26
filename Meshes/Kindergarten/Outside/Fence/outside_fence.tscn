@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bjhn6l6a51okd"]
+
+[ext_resource type="ArrayMesh" uid="uid://bbhxp8rge43bc" path="res://Meshes/Kindergarten/Outside/Fence/outside_fence_Cube.res" id="1_n1mu0"]
+
+[node name="outside_fence" type="Node3D"]
+
+[node name="Fence" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+mesh = ExtResource("1_n1mu0")
+skeleton = NodePath("")

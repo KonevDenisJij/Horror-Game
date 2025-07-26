@@ -1,0 +1,93 @@
+[gd_scene load_steps=3 format=3 uid="uid://bpsbrwio05stp"]
+
+[ext_resource type="Script" uid="uid://bll68s7b52guk" path="res://Scripts/UI/PauseMenu/PauseMenuUI.cs" id="1_appjt"]
+[ext_resource type="PackedScene" uid="uid://8kqe8kamoe8g" path="res://Scenes/UI/PauseUI/SettingsUI.tscn" id="3_64sqc"]
+
+[node name="PauseMenuUI" type="Control" node_paths=PackedStringArray("_menuBaseUI", "_settingsUI")]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_appjt")
+_menuBaseUI = NodePath("MenuUI")
+_settingsUI = NodePath("SettingsUI")
+
+[node name="SettingsUI" parent="." node_paths=PackedStringArray("_menuBaseUI") instance=ExtResource("3_64sqc")]
+visible = false
+_menuBaseUI = NodePath("../MenuUI")
+
+[node name="MenuUI" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ColorRect" type="ColorRect" parent="MenuUI"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -70.0
+offset_top = -170.0
+offset_right = 130.0
+offset_bottom = 130.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.384314, 0.513726, 0.580392, 0.313726)
+
+[node name="ContinueButton" type="Button" parent="MenuUI/ColorRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -60.0
+offset_top = -113.0
+offset_right = 60.0
+offset_bottom = -63.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Continue
+"
+
+[node name="OptionsButton" type="Button" parent="MenuUI/ColorRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -60.0
+offset_top = -25.0
+offset_right = 60.0
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Options"
+
+[node name="ExitButton" type="Button" parent="MenuUI/ColorRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -60.0
+offset_top = 62.0
+offset_right = 60.0
+offset_bottom = 112.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Exit"
+
+[connection signal="button_up" from="MenuUI/ColorRect/ContinueButton" to="." method="ContinueButtonClick"]
+[connection signal="button_up" from="MenuUI/ColorRect/OptionsButton" to="." method="OptionsButtonClick"]
+[connection signal="button_up" from="MenuUI/ColorRect/ExitButton" to="." method="ExitButtonClick"]

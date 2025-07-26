@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://oxotukt6rd5p"]
+
+[ext_resource type="Script" path="res://Scripts/DifferentSystems/MouseModeController.cs" id="1_ewhos"]
+
+[node name="MouseModeController" type="Node3D"]
+script = ExtResource("1_ewhos")

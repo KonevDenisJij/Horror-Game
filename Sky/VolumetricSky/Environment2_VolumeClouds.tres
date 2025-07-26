@@ -1,0 +1,55 @@
+[gd_resource type="Environment" load_steps=9 format=3 uid="uid://c64sjceegxqkp"]
+
+[ext_resource type="Shader" path="res://Sky/VolumetricSky/clouds.gdshader" id="1_rr1bl"]
+[ext_resource type="CompressedTexture3D" uid="uid://dwff2r13l7yf1" path="res://Sky/VolumetricSky/perlworlnoise.tga" id="2_gepou"]
+[ext_resource type="Texture2D" uid="uid://c2d00qb77jdr0" path="res://Sky/VolumetricSky/weather.bmp" id="3_hgn53"]
+[ext_resource type="CompressedTexture3D" uid="uid://c17bsdvflchwl" path="res://Sky/VolumetricSky/worlnoise.bmp" id="4_avw45"]
+
+[sub_resource type="Gradient" id="Gradient_g4rod"]
+offsets = PackedFloat32Array(0, 0.107317, 0.890244, 1)
+colors = PackedColorArray(0, 0, 0, 1, 0.088, 0.0949667, 0.11, 1, 0.83, 0.741467, 0.664, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_5pkhi"]
+gradient = SubResource("Gradient_g4rod")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1tgdw"]
+shader = ExtResource("1_rr1bl")
+shader_parameter/wind_direction = Vector2(1, 0)
+shader_parameter/wind_speed = 5.522
+shader_parameter/_density = 0.134
+shader_parameter/cloud_coverage = 0.25
+shader_parameter/_time_offset = 0.0
+shader_parameter/rayleigh = 2.0
+shader_parameter/rayleigh_color = Color(0.258824, 0.411765, 0.580392, 1)
+shader_parameter/mie = 0.04
+shader_parameter/mie_eccentricity = 0.8
+shader_parameter/mie_color = Color(0.63, 0.77, 0.92, 1)
+shader_parameter/turbidity = 10.0
+shader_parameter/sun_disk_scale = 1.0
+shader_parameter/ground_color = Color(0, 0, 0, 1)
+shader_parameter/exposure = 0.1
+shader_parameter/worlnoise = ExtResource("4_avw45")
+shader_parameter/perlworlnoise = ExtResource("2_gepou")
+shader_parameter/weathermap = ExtResource("3_hgn53")
+
+[sub_resource type="Sky" id="Sky_mwgbw"]
+sky_material = SubResource("ShaderMaterial_1tgdw")
+
+[resource]
+background_mode = 2
+sky = SubResource("Sky_mwgbw")
+tonemap_white = 2.0
+ssao_radius = 2.0
+ssao_light_affect = 1.0
+glow_levels/1 = 1.0
+glow_levels/2 = 1.0
+glow_levels/4 = 1.0
+glow_levels/6 = 1.0
+glow_levels/7 = 1.0
+glow_normalized = true
+glow_intensity = 0.1
+glow_blend_mode = 1
+fog_light_color = Color(0, 0, 0, 1)
+fog_density = 0.1
+fog_sky_affect = 0.0
+adjustment_color_correction = SubResource("GradientTexture1D_5pkhi")

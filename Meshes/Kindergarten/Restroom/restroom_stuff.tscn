@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://c6568i4og8qj5"]
+
+[ext_resource type="PackedScene" uid="uid://cqioo4bhvo4if" path="res://Meshes/Kindergarten/Restroom/Lamp/restroom_lamp.tscn" id="1_bypwu"]
+[ext_resource type="PackedScene" uid="uid://cetoo4f6qr1s" path="res://Meshes/Kindergarten/Restroom/Sink/restroom_sink.tscn" id="2_8ret2"]
+[ext_resource type="PackedScene" uid="uid://dmdoycurmqrwx" path="res://Meshes/Kindergarten/Restroom/Toilet/restroom_toilet.tscn" id="3_ousoo"]
+[ext_resource type="PackedScene" uid="uid://2g15op3rwid0" path="res://Meshes/Kindergarten/Restroom/Stool/restroom_stool.tscn" id="4_l00pu"]
+
+[node name="restroom_stuff" type="Node3D"]
+
+[node name="restroom_lamp" parent="." instance=ExtResource("1_bypwu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.511241, 0, 0)
+
+[node name="restroom_sink" parent="." instance=ExtResource("2_8ret2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.607833, 0, 0)
+
+[node name="restroom_toilet" parent="." instance=ExtResource("3_ousoo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="restroom_stool2" parent="." instance=ExtResource("4_l00pu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.81755, 0, 0)

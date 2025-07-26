@@ -1,0 +1,30 @@
+[gd_scene load_steps=2 format=3 uid="uid://do8pcpawou4gm"]
+
+[ext_resource type="Script" uid="uid://cgke2ji6mvxtk" path="res://Scripts/UI/PopUpUI.cs" id="1_vmela"]
+
+[node name="PopUpUI" type="Control" node_paths=PackedStringArray("_label")]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_vmela")
+_label = NodePath("PanelContainer/Label")
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -53.0
+offset_top = -20.0
+offset_right = 53.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="PanelContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "E to Interact
+"

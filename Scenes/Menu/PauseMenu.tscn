@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://wmewr4nntj0s"]
+
+[ext_resource type="Script" path="res://Scripts/Menu/PauseMenu.cs" id="1_te3j6"]
+
+[node name="PauseMenu" type="Node3D"]
+script = ExtResource("1_te3j6")

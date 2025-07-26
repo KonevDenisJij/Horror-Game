@@ -1,0 +1,19 @@
+[gd_resource type="StandardMaterial3D" load_steps=4 format=3 uid="uid://b8leeh7rse1mi"]
+
+[ext_resource type="Texture2D" uid="uid://wvrp1a88fjod" path="res://Meshes/Kindergarten/Office/Plant2/office_plantPot2_PlantPotGround_Base-Color.png" id="1_qi2jq"]
+[ext_resource type="Texture2D" uid="uid://cxnlk6p53o2ya" path="res://Meshes/Kindergarten/Office/Plant2/office_plantPot2_PlantPotGround_AORoughMetall.png" id="2_lbh05"]
+[ext_resource type="Texture2D" uid="uid://b55fpn1efw720" path="res://Meshes/Kindergarten/Office/Plant2/office_plantPot2_PlantPotGround_Normal.png" id="3_ipt1a"]
+
+[resource]
+resource_name = "PlantPotGround"
+cull_mode = 2
+albedo_texture = ExtResource("1_qi2jq")
+metallic = 1.0
+metallic_texture = ExtResource("2_lbh05")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("2_lbh05")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("3_ipt1a")
+ao_enabled = true
+ao_texture = ExtResource("2_lbh05")

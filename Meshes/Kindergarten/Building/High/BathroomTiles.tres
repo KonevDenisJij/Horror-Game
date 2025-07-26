@@ -1,0 +1,21 @@
+[gd_resource type="StandardMaterial3D" load_steps=5 format=3 uid="uid://drb3orumm2si2"]
+
+[ext_resource type="Texture2D" uid="uid://sc4pi7ld4myh" path="res://Meshes/Kindergarten/Building/High/kindergartenSingleMesh_BathroomTiles_High_Base-Color.png" id="1_4x4u2"]
+[ext_resource type="Texture2D" uid="uid://b2qm7jrd20aqe" path="res://Meshes/Kindergarten/Building/High/kindergartenSingleMesh_BathroomTilesFloorMat_High_AORoughMetall.png" id="2_00mrp"]
+[ext_resource type="Texture2D" uid="uid://c27afwr6wnakd" path="res://Meshes/Kindergarten/Building/High/kindergartenSingleMesh_BathroomTiles_High_AORoughMetall.png" id="3_f7fdf"]
+[ext_resource type="Texture2D" uid="uid://cdbrupipc1n67" path="res://Meshes/Kindergarten/Building/High/kindergartenSingleMesh_BathroomTiles_High_Normal.png" id="4_1asql"]
+
+[resource]
+resource_name = "BathroomTiles"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_4x4u2")
+metallic = 1.0
+metallic_texture = ExtResource("3_f7fdf")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("3_f7fdf")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("4_1asql")
+ao_enabled = true
+ao_texture = ExtResource("2_00mrp")
+uv1_scale = Vector3(6, 6, 6)

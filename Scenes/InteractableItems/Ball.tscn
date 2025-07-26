@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://m4fxhmw66t2q"]
+
+[ext_resource type="Script" path="res://Scripts/InteractableItems/Ball.cs" id="1_qamcm"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_idxy7"]
+friction = 0.2
+bounce = 0.7
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_pym3o"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_tvkcr"]
+
+[node name="Ball" type="RigidBody3D"]
+collision_layer = 4
+collision_mask = 15
+mass = 0.3
+physics_material_override = SubResource("PhysicsMaterial_idxy7")
+linear_damp = 0.5
+angular_damp = 0.5
+script = ExtResource("1_qamcm")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 0, 0, 0)
+shape = SubResource("SphereShape3D_pym3o")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 0, 0, 0)
+mesh = SubResource("SphereMesh_tvkcr")

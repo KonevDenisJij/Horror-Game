@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://pxyxpy4s1ovi"]
+
+[ext_resource type="Texture2D" uid="uid://cc2gxty0yclsb" path="res://Meshes/Kindergarten/Outside/GrassBlades/High/GrassBlades_High.png" id="1_6o3gd"]
+
+[resource]
+resource_name = "Grass_Mat"
+transparency = 4
+cull_mode = 2
+albedo_color = Color(0.87, 0.69919, 0.3306, 1)
+albedo_texture = ExtResource("1_6o3gd")
+roughness = 0.5

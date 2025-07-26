@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=3 uid="uid://cemw16hj47gkg"]
+
+[ext_resource type="Script" uid="uid://cxwelcno30ogf" path="res://Scripts/EnvironmentObjects/Mirror.cs" id="1_ldqje"]
+[ext_resource type="Shader" uid="uid://buaeug3p1b4l8" path="res://mirror.gdshader" id="2_jygm5"]
+[ext_resource type="Texture2D" uid="uid://dv7or75ki3di5" path="res://Textures/Misk/mirror dirt.png" id="3_trlw5"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_tl16c"]
+resource_local_to_scene = true
+render_priority = 0
+shader = ExtResource("2_jygm5")
+shader_parameter/tint = Color(0.98, 0.98, 0.98, 1)
+shader_parameter/distort_tex = ExtResource("3_trlw5")
+shader_parameter/distort_strength = 0.0
+
+[sub_resource type="QuadMesh" id="QuadMesh_qs6o8"]
+resource_local_to_scene = true
+material = SubResource("ShaderMaterial_tl16c")
+
+[node name="Mirror" type="Node3D"]
+script = ExtResource("1_ldqje")
+
+[node name="VisibleOnScreenNotifier3D" type="VisibleOnScreenNotifier3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="VisibleOnScreenNotifier3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+mesh = SubResource("QuadMesh_qs6o8")
+skeleton = NodePath("")
+
+[node name="SubViewport" type="SubViewport" parent="VisibleOnScreenNotifier3D/MeshInstance3D"]
+msaa_3d = 2
+screen_space_aa = 1
+use_occlusion_culling = true
+
+[node name="Camera3D" type="Camera3D" parent="VisibleOnScreenNotifier3D/MeshInstance3D/SubViewport"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+projection = 2
+current = true
+
+[connection signal="screen_entered" from="VisibleOnScreenNotifier3D" to="." method="OnScreenEntered"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier3D" to="." method="OnScreenExited"]

@@ -1,0 +1,16 @@
+[gd_resource type="StandardMaterial3D" load_steps=4 format=3 uid="uid://dqgo4y4ao74jk"]
+
+[ext_resource type="Texture2D" uid="uid://dw3h17uiiad1u" path="res://Meshes/Kindergarten/Office/Plant2/office_plantPot2_Leaf_Base-Color.png" id="1_avq5o"]
+[ext_resource type="Texture2D" uid="uid://clpjl2hh4sj5p" path="res://Meshes/Kindergarten/Office/Plant2/office_plantPot2_Leaf_AORoughMetall.png" id="2_g6q1x"]
+[ext_resource type="Texture2D" uid="uid://c1fyiioi6dhmc" path="res://Meshes/Kindergarten/Office/Plant2/office_plantPot2_Leaf_Normal.png" id="3_adwoh"]
+
+[resource]
+resource_name = "Leaf"
+cull_mode = 2
+albedo_texture = ExtResource("1_avq5o")
+metallic_texture_channel = 2
+roughness = 0.91
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("3_adwoh")
+ao_texture = ExtResource("2_g6q1x")

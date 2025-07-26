@@ -1,0 +1,44 @@
+{
+	"characterName": "Гопник",
+	"dialogue": [
+		{
+			"id": 1,
+			"text": "Ты схуяли мой мячик трогаешь пидорок?",
+			"replies": [
+				{
+					"order": 1,
+					"text": "Иди впизду",
+					"nextDialogueId": 2
+				},
+				{
+					"order": 2,
+					"text": "ой, прости...",
+					"nextDialogueId": 4
+				}
+			],
+			"signalName": "",
+			"dialogueFinish": false
+		},
+		{
+			"id": 2,
+			"text": "...",
+			"replies": [],
+			"signalName": "StartFight",
+			"dialogueFinish": false
+		},
+		{
+			"id": 3,
+			"text": "Ладно... Можешь поиграть... Только в меня не кидай пожалуйста...",
+			"replies": [],
+			"signalName": "",
+			"dialogueFinish": true
+		},
+		{
+			"id": 4,
+			"text": "А ну положи БЛЯТЬ",
+			"replies": [],
+			"signalName": "PlayerDropBall",
+			"dialogueFinish": true
+		}
+	]
+}

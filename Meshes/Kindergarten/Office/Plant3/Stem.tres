@@ -1,0 +1,20 @@
+[gd_resource type="StandardMaterial3D" load_steps=4 format=3 uid="uid://dbdocewkwm2o8"]
+
+[ext_resource type="Texture2D" uid="uid://dmwyul5ao47iw" path="res://Meshes/Kindergarten/Office/Plant3/office_plantPot3_Stem_Base-Color.png" id="1_lsmmg"]
+[ext_resource type="Texture2D" uid="uid://mx16s8oa4obk" path="res://Meshes/Kindergarten/Office/Plant3/office_plantPot3_Stem_AORoughMetall.png" id="2_yvlro"]
+[ext_resource type="Texture2D" uid="uid://bueoh0cw4ot2n" path="res://Meshes/Kindergarten/Office/Plant3/office_plantPot3_Stem_Normal.png" id="3_bjdrc"]
+
+[resource]
+resource_name = "Stem"
+cull_mode = 2
+albedo_color = Color(0.906332, 0.906332, 0.906332, 1)
+albedo_texture = ExtResource("1_lsmmg")
+metallic = 1.0
+metallic_texture = ExtResource("2_yvlro")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("2_yvlro")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("3_bjdrc")
+ao_enabled = true
+ao_texture = ExtResource("2_yvlro")

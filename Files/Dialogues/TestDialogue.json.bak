@@ -1,0 +1,42 @@
+{
+	"characterName": "Гопник",
+	"dialogue":	{
+		"id":1,
+		"text":"Эй! Тебе чё надо пидор бля?",
+		"replies": [
+		{
+			"order":1,
+			"text":"А может ты пидор?",
+			"nextDialogueId":2
+		},
+		{
+			"order":2,
+			"text":"Извини пж",
+			"nextDialogueId":3
+		}
+		],
+		"signalName": "",
+		"dialogueFinish": false
+	},
+	{
+		"id":2,
+		"text":"Ты че бессмертый сука бля?",
+		"replies": [],
+		"signalName": "StartFight",
+		"dialogueFinish": true
+	},
+	{
+		"id":3,
+		"text":"Ну ты внатуре пидор какой-то))",
+		"replies": [],
+		"signalName": "",
+		"dialogueFinish": false
+	},
+	{
+		"id":4,
+		"text":"Ладно пиздуй отсюда пока ноги целы",
+		"replies": [],
+		"signalName": "",
+		"dialogueFinish": true
+	}
+}

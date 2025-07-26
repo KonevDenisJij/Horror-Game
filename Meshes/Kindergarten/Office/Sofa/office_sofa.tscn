@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://cwby406xp12xa"]
+
+[ext_resource type="ArrayMesh" uid="uid://bycu4120atwmv" path="res://Meshes/Kindergarten/Office/Sofa/office_sofa_Cube.res" id="1_ejqv7"]
+[ext_resource type="ArrayMesh" uid="uid://tib2xmsniyvd" path="res://Meshes/Kindergarten/Office/Sofa/office_sofa_Cube_008.res" id="2_mbf5e"]
+
+[node name="office_sofa" type="Node3D"]
+
+[node name="Cube" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+mesh = ExtResource("1_ejqv7")
+skeleton = NodePath("")
+
+[node name="legs" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+mesh = ExtResource("2_mbf5e")
+skeleton = NodePath("")

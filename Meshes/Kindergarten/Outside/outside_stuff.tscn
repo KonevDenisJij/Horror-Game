@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://cgqxtjviucf4h"]
+
+[ext_resource type="PackedScene" uid="uid://btf1pbjm2gijt" path="res://Meshes/Kindergarten/Outside/Grass/kindergarten_grass.tscn" id="1_ojfjk"]
+[ext_resource type="PackedScene" uid="uid://bjhn6l6a51okd" path="res://Meshes/Kindergarten/Outside/Fence/outside_fence.tscn" id="2_1rc5g"]
+[ext_resource type="PackedScene" uid="uid://b5nftiwlx6ku8" path="res://Meshes/Kindergarten/Outside/GrassBlades/grass_blades.tscn" id="3_1cvvf"]
+[ext_resource type="PackedScene" uid="uid://5yiuvqng56ub" path="res://Meshes/Kindergarten/Outside/Tree/outside_tree.tscn" id="4_e8efs"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="KindergartenGrass" parent="." instance=ExtResource("1_ojfjk")]
+
+[node name="outside_fence" parent="." instance=ExtResource("2_1rc5g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 15)
+
+[node name="GrassBlades" parent="." instance=ExtResource("3_1cvvf")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -3.65348, 0, 13.709)
+
+[node name="outside_tree" parent="." instance=ExtResource("4_e8efs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.06548, 0, 11.7514)

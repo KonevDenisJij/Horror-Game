@@ -1,0 +1,20 @@
+[gd_resource type="StandardMaterial3D" load_steps=4 format=3 uid="uid://4at5ni8ba7t4"]
+
+[ext_resource type="Texture2D" uid="uid://76oiw7btoq0j" path="res://Meshes/Kindergarten/Building/High/kindergartenSingleMesh_CoridorBottomMat_High_Base-Color.png" id="1_870rn"]
+[ext_resource type="Texture2D" uid="uid://cywglqu7uocik" path="res://Meshes/Kindergarten/Building/High/kindergartenSingleMesh_CoridorBottomMat_High_AORoughMetall.png" id="2_8bbkc"]
+[ext_resource type="Texture2D" uid="uid://baorhpkygg4ym" path="res://Meshes/Kindergarten/Building/High/kindergartenSingleMesh_CoridorBottomMat_High_Normal.png" id="3_drr3x"]
+
+[resource]
+resource_name = "CoridorMatBottom"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_870rn")
+metallic = 1.0
+metallic_texture = ExtResource("2_8bbkc")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("2_8bbkc")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("3_drr3x")
+ao_enabled = true
+ao_texture = ExtResource("2_8bbkc")
+uv1_scale = Vector3(7, 7, 7)

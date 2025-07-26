@@ -1,0 +1,261 @@
+[gd_scene load_steps=35 format=3 uid="uid://1rx5eydjnka2"]
+
+[ext_resource type="ArrayMesh" uid="uid://7q38gf56keh2" path="res://Meshes/Kindergarten/Building/kindergartenSingleMesh_Cube_053.res" id="1_gndek"]
+[ext_resource type="ArrayMesh" uid="uid://bwwwyaj5yl6ag" path="res://Meshes/Kindergarten/Building/kindergartenSingleMesh_Cube_026.res" id="2_jbety"]
+[ext_resource type="ArrayMesh" uid="uid://c6t7xxjfrxip4" path="res://Meshes/Kindergarten/Building/kindergartenSingleMesh_Cube_025.res" id="3_vd2op"]
+[ext_resource type="ArrayMesh" uid="uid://dhsxsxnlthkkf" path="res://Meshes/Kindergarten/Building/kindergartenSingleMesh_Cube_001.res" id="4_lnxc5"]
+[ext_resource type="ArrayMesh" uid="uid://bhqkibpha12q5" path="res://Meshes/Kindergarten/Building/kindergartenSingleMesh_Cube_005.res" id="5_6t3io"]
+[ext_resource type="ArrayMesh" uid="uid://m4ic33w66fkc" path="res://Meshes/Kindergarten/Building/kindergartenSingleMesh_Cube_007.res" id="6_f8riy"]
+[ext_resource type="ArrayMesh" uid="uid://evugcfhd0or6" path="res://Meshes/Kindergarten/Building/kindergartenSingleMesh_Cube_008.res" id="7_k5ptg"]
+[ext_resource type="ArrayMesh" uid="uid://wgw53p54p50d" path="res://Meshes/Kindergarten/Building/kindergartenSingleMesh_Cube_018.res" id="8_mgw0n"]
+[ext_resource type="ArrayMesh" uid="uid://d0tkcqgx6u1rl" path="res://Meshes/Kindergarten/Building/kindergartenSingleMesh_Cube_020.res" id="9_cjo7x"]
+[ext_resource type="ArrayMesh" uid="uid://bqrbunqbw1c75" path="res://Meshes/Kindergarten/Building/kindergartenSingleMesh_Cube_023.res" id="10_482gj"]
+[ext_resource type="ArrayMesh" uid="uid://c8xgnjxl0f3pa" path="res://Meshes/Kindergarten/Building/kindergartenSingleMesh_Cube_006.res" id="11_1vtox"]
+[ext_resource type="ArrayMesh" uid="uid://co2xd4kyb18d5" path="res://Meshes/Kindergarten/Building/kindergartenSingleMesh_Cube_016.res" id="12_035ir"]
+[ext_resource type="ArrayMesh" uid="uid://dteud6loq42bv" path="res://Meshes/Kindergarten/Building/kindergartenSingleMesh_Cube_010.res" id="13_yxmgr"]
+[ext_resource type="ArrayMesh" uid="uid://c3rqxy0hwi1sy" path="res://Meshes/Kindergarten/Building/kindergartenSingleMesh_Cube_027.res" id="14_c8gye"]
+[ext_resource type="PackedScene" uid="uid://cwby406xp12xa" path="res://Meshes/Kindergarten/Office/Sofa/office_sofa.tscn" id="15_yw4as"]
+[ext_resource type="PackedScene" uid="uid://cckbvyidxohdo" path="res://Meshes/Kindergarten/Office/LoungeTable/office_lounge_table.tscn" id="16_b85um"]
+[ext_resource type="PackedScene" uid="uid://c2f04qfhnn3hf" path="res://Meshes/Kindergarten/Office/Cooler/office_cooler.tscn" id="17_jbpm8"]
+[ext_resource type="PackedScene" uid="uid://b6al7dn1ydsxh" path="res://Meshes/Kindergarten/Office/Closet/office_closet.tscn" id="18_my7p0"]
+[ext_resource type="PackedScene" uid="uid://dveanyssf7qfx" path="res://Meshes/Kindergarten/Office/Cabinet/office_cabinet.tscn" id="19_7ja4p"]
+[ext_resource type="PackedScene" uid="uid://dil1yov8ck0sc" path="res://Meshes/Kindergarten/Office/Table/office_table.tscn" id="20_7ja4p"]
+[ext_resource type="PackedScene" uid="uid://d1ilk3x38yda8" path="res://Meshes/Kindergarten/Office/Plant3/office_plant_3.tscn" id="21_bftql"]
+[ext_resource type="PackedScene" uid="uid://cbosfae6vo35w" path="res://Meshes/Kindergarten/Office/Plant2/office_pant_2.tscn" id="22_qss7o"]
+[ext_resource type="PackedScene" uid="uid://ckcanw0ebkoy8" path="res://Meshes/Kindergarten/Office/Plant/office_plant.tscn" id="23_itgdp"]
+[ext_resource type="PackedScene" uid="uid://3xh43jvu1jlw" path="res://Meshes/Kindergarten/Office/DirectorChair/office_director_chair.tscn" id="24_itgdp"]
+[ext_resource type="PackedScene" uid="uid://0y5yetmiisru" path="res://Meshes/Kindergarten/Office/Door/office_door.tscn" id="24_qss7o"]
+[ext_resource type="PackedScene" uid="uid://dhqqh36e2oeka" path="res://Meshes/Kindergarten/Office/Chair/office_chair.tscn" id="25_bjnxm"]
+[ext_resource type="PackedScene" uid="uid://bloq384a64ikv" path="res://Meshes/Kindergarten/Corridor/Lamp/corridor_lamp.tscn" id="27_ocp4a"]
+[ext_resource type="PackedScene" uid="uid://cqioo4bhvo4if" path="res://Meshes/Kindergarten/Restroom/Lamp/restroom_lamp.tscn" id="28_0jmjm"]
+[ext_resource type="PackedScene" uid="uid://cetoo4f6qr1s" path="res://Meshes/Kindergarten/Restroom/Sink/restroom_sink.tscn" id="29_a77ph"]
+[ext_resource type="PackedScene" uid="uid://dmdoycurmqrwx" path="res://Meshes/Kindergarten/Restroom/Toilet/restroom_toilet.tscn" id="30_hhees"]
+[ext_resource type="PackedScene" uid="uid://2g15op3rwid0" path="res://Meshes/Kindergarten/Restroom/Stool/restroom_stool.tscn" id="31_tv1fi"]
+[ext_resource type="PackedScene" uid="uid://cemw16hj47gkg" path="res://Meshes/Kindergarten/Restroom/Mirror/Mirror.tscn" id="32_lu524"]
+[ext_resource type="PackedScene" uid="uid://d4geceuvgrao0" path="res://Meshes/Kindergarten/Corridor/Locker/corridor_locker.tscn" id="33_gndek"]
+[ext_resource type="PackedScene" uid="uid://c8pkeytqsgj88" path="res://Meshes/Kindergarten/Corridor/Bench/corridor_bench.tscn" id="34_jbety"]
+
+[node name="kindergarten" type="Node3D"]
+
+[node name="BuildingMesh" type="Node3D" parent="."]
+
+[node name="Mesh" type="MeshInstance3D" parent="BuildingMesh"]
+mesh = ExtResource("1_gndek")
+skeleton = NodePath("")
+
+[node name="BathroomWindow_001" type="MeshInstance3D" parent="BuildingMesh"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.975, 1.975, -0.424999)
+mesh = ExtResource("2_jbety")
+skeleton = NodePath("")
+
+[node name="BathroomWindow_002" type="MeshInstance3D" parent="BuildingMesh"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.475, 1.975, -0.424999)
+mesh = ExtResource("3_vd2op")
+skeleton = NodePath("")
+
+[node name="BathroomDoor" type="MeshInstance3D" parent="BuildingMesh"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9, 0.3, -2.9)
+mesh = ExtResource("4_lnxc5")
+skeleton = NodePath("")
+
+[node name="BathroomDoor_001" type="MeshInstance3D" parent="BuildingMesh"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.75, 0.3, -2.9)
+mesh = ExtResource("5_6t3io")
+skeleton = NodePath("")
+
+[node name="BathroomDoor_002" type="MeshInstance3D" parent="BuildingMesh"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.6, 0.3, -2.9)
+mesh = ExtResource("6_f8riy")
+skeleton = NodePath("")
+
+[node name="BathroomDoor_003" type="MeshInstance3D" parent="BuildingMesh"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.45, 0.3, -2.9)
+mesh = ExtResource("7_k5ptg")
+skeleton = NodePath("")
+
+[node name="BedroomWindow_001" type="MeshInstance3D" parent="BuildingMesh"]
+transform = Transform3D(1.78814e-07, 0, 1, 0, 1, 0, -1, 0, 1.78814e-07, 22.7, 1, 5.15)
+mesh = ExtResource("8_mgw0n")
+skeleton = NodePath("")
+
+[node name="BedroomWindow_002" type="MeshInstance3D" parent="BuildingMesh"]
+transform = Transform3D(-1, 0, 1.50996e-07, 0, 1, 0, -1.50996e-07, 0, -1, 27.847, 1, 2.9)
+mesh = ExtResource("9_cjo7x")
+skeleton = NodePath("")
+
+[node name="BedroomWindow" type="MeshInstance3D" parent="BuildingMesh"]
+transform = Transform3D(-1, 0, 1.50996e-07, 0, 1, 0, -1.50996e-07, 0, -1, 27.847, 1, -6.601)
+mesh = ExtResource("10_482gj")
+skeleton = NodePath("")
+
+[node name="OfficeWindow_001" type="MeshInstance3D" parent="BuildingMesh"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.36, 1, -16.85)
+mesh = ExtResource("11_1vtox")
+skeleton = NodePath("")
+
+[node name="OfficeWindow" type="MeshInstance3D" parent="BuildingMesh"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.36, 1, -11.6)
+mesh = ExtResource("12_035ir")
+skeleton = NodePath("")
+
+[node name="OfficeWindow_002" type="MeshInstance3D" parent="BuildingMesh"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.36, 1, -6.5)
+mesh = ExtResource("13_yxmgr")
+skeleton = NodePath("")
+
+[node name="KitchenWindow" type="MeshInstance3D" parent="BuildingMesh"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.9, 2.35, -0.413)
+mesh = ExtResource("14_c8gye")
+skeleton = NodePath("")
+
+[node name="OfficeStuff" type="Node3D" parent="."]
+
+[node name="office_sofa" parent="OfficeStuff" instance=ExtResource("15_yw4as")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -3.71606, 0, -10.7153)
+
+[node name="office_loungeTable" parent="OfficeStuff" instance=ExtResource("16_b85um")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.23784, 0, -10.1893)
+
+[node name="office_cooler" parent="OfficeStuff" instance=ExtResource("17_jbpm8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.04676, 0, -12.2428)
+
+[node name="office_closet" parent="OfficeStuff" instance=ExtResource("18_my7p0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.75471, 0, -18.8739)
+
+[node name="office_closet2" parent="OfficeStuff" instance=ExtResource("18_my7p0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.21885, 0, -18.9972)
+
+[node name="office_cabinet" parent="OfficeStuff" instance=ExtResource("19_7ja4p")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -3.0631, 0, -13.9382)
+
+[node name="office_table" parent="OfficeStuff" instance=ExtResource("20_7ja4p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.36753, 0, -17.449)
+
+[node name="office_plant3" parent="OfficeStuff" instance=ExtResource("21_bftql")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.1496, 1.00271, -17.8376)
+
+[node name="office_pant2" parent="OfficeStuff" instance=ExtResource("22_qss7o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.15017, 0.808243, -13.382)
+
+[node name="office_plant" parent="OfficeStuff" instance=ExtResource("23_itgdp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.0658, 1.00739, -14.4484)
+
+[node name="office_directorChair" parent="OfficeStuff" instance=ExtResource("24_itgdp")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -6.30158, 1.19209e-07, -18.0521)
+
+[node name="office_chair" parent="OfficeStuff" instance=ExtResource("25_bjnxm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.9816, 1.19209e-07, -16.0475)
+
+[node name="office_chair2" parent="OfficeStuff" instance=ExtResource("25_bjnxm")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -5.76396, 0, -16.0989)
+
+[node name="Doors" type="Node3D" parent="."]
+
+[node name="office_door" parent="Doors" instance=ExtResource("24_qss7o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.45, 0, -12.7)
+
+[node name="Lights" type="Node3D" parent="."]
+
+[node name="restroom_lamp" parent="Lights" instance=ExtResource("28_0jmjm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.42841, 2.39919, -4.85933)
+
+[node name="corridor_lamp" parent="Lights" instance=ExtResource("27_ocp4a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 3, -4)
+
+[node name="corridor_lamp2" parent="Lights" instance=ExtResource("27_ocp4a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 3, -10)
+
+[node name="corridor_lamp3" parent="Lights" instance=ExtResource("27_ocp4a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 3, -16)
+
+[node name="RestroomStuff" type="Node3D" parent="."]
+
+[node name="restroom_sink" parent="RestroomStuff" instance=ExtResource("29_a77ph")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.5, 0.75, -7.15)
+
+[node name="restroom_sink2" parent="RestroomStuff" instance=ExtResource("29_a77ph")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.5, 0.75, -7.15)
+
+[node name="restroom_sink3" parent="RestroomStuff" instance=ExtResource("29_a77ph")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.5, 0.75, -7.15)
+
+[node name="restroom_sink4" parent="RestroomStuff" instance=ExtResource("29_a77ph")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, 0.75, -7.15)
+
+[node name="restroom_toilet" parent="RestroomStuff" instance=ExtResource("30_hhees")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -3.6, 0, -0.7)
+
+[node name="restroom_toilet2" parent="RestroomStuff" instance=ExtResource("30_hhees")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.4, 0, -0.7)
+
+[node name="restroom_toilet3" parent="RestroomStuff" instance=ExtResource("30_hhees")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.3, 0, -0.7)
+
+[node name="restroom_toilet4" parent="RestroomStuff" instance=ExtResource("30_hhees")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -9.3, 0, -0.7)
+
+[node name="restroom_stool" parent="RestroomStuff" instance=ExtResource("31_tv1fi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.69093, 0, -6.53947)
+
+[node name="restroom_stool2" parent="RestroomStuff" instance=ExtResource("31_tv1fi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.57984, 0, -6.51338)
+
+[node name="restroom_stool3" parent="RestroomStuff" instance=ExtResource("31_tv1fi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.3721, 0, -6.51004)
+
+[node name="restroom_stool4" parent="RestroomStuff" instance=ExtResource("31_tv1fi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.32088, 0, -6.50521)
+
+[node name="Mirror" parent="RestroomStuff" instance=ExtResource("32_lu524")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.49379, 1.2, -7.487)
+visible = false
+
+[node name="Mirror2" parent="RestroomStuff" instance=ExtResource("32_lu524")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.49668, 1.2, -7.473)
+visible = false
+
+[node name="Mirror3" parent="RestroomStuff" instance=ExtResource("32_lu524")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.50264, 1.2, -7.473)
+visible = false
+
+[node name="Mirror4" parent="RestroomStuff" instance=ExtResource("32_lu524")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.47216, 1.2, -7.473)
+visible = false
+
+[node name="Corridor" type="Node3D" parent="."]
+
+[node name="corridor_locker" parent="Corridor" instance=ExtResource("33_gndek")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.67247, 0, -4.09571)
+
+[node name="corridor_locker2" parent="Corridor" instance=ExtResource("33_gndek")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.62785, 0, -4.74928)
+
+[node name="corridor_locker3" parent="Corridor" instance=ExtResource("33_gndek")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.63757, 0, -5.42991)
+
+[node name="corridor_locker4" parent="Corridor" instance=ExtResource("33_gndek")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.55023, 0, -6.07357)
+
+[node name="corridor_locker5" parent="Corridor" instance=ExtResource("33_gndek")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.58241, 0, -6.71672)
+
+[node name="corridor_locker6" parent="Corridor" instance=ExtResource("33_gndek")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.58, 0, -7.35847)
+
+[node name="corridor_locker7" parent="Corridor" instance=ExtResource("33_gndek")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.66599, 0, -8.03008)
+
+[node name="corridor_locker8" parent="Corridor" instance=ExtResource("33_gndek")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.62099, 0, -8.70022)
+
+[node name="corridor_locker9" parent="Corridor" instance=ExtResource("33_gndek")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.69221, 0, -9.35223)
+
+[node name="corridor_bench" parent="Corridor" instance=ExtResource("34_jbety")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.50951, 0, -2.02605)
+
+[node name="corridor_bench2" parent="Corridor" instance=ExtResource("34_jbety")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5878, 0, -11.3738)
+
+[node name="corridor_bench" parent="." instance=ExtResource("34_jbety")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.77244, 0, -16.2132)

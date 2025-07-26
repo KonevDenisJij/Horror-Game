@@ -1,0 +1,185 @@
+[gd_scene load_steps=19 format=3 uid="uid://bpxytlxq04cfm"]
+
+[ext_resource type="PackedScene" uid="uid://hmyb2tifqswu" path="res://Scenes/UI/DialogueUI/DialogueSystemUIOld.tscn" id="5_f4w8y"]
+[ext_resource type="Shader" uid="uid://fjtw6ecso0fs" path="res://Sky/Sky.gdshader" id="5_fwnrf"]
+[ext_resource type="PackedScene" uid="uid://bpsbrwio05stp" path="res://Scenes/UI/PauseUI/PauseMenuUI.tscn" id="6_q0hal"]
+[ext_resource type="PackedScene" uid="uid://do8pcpawou4gm" path="res://Scenes/UI/PopUpUI.tscn" id="7_movu8"]
+[ext_resource type="PackedScene" uid="uid://cm4m3v4icyolg" path="res://Scenes/Player/Player.tscn" id="9_5i2wj"]
+[ext_resource type="PackedScene" uid="uid://bgatr3y7flg6i" path="res://Meshes/BullyGirl/Bully_Girl.tscn" id="10_461gx"]
+[ext_resource type="PackedScene" uid="uid://1rx5eydjnka2" path="res://Meshes/Kindergarten/Building/kindergarten.tscn" id="19_82xsv"]
+[ext_resource type="PackedScene" uid="uid://0vfk54wklwg2" path="res://Scenes/Points/PointOfInterest.tscn" id="64_n47am"]
+
+[sub_resource type="Gradient" id="Gradient_g4rod"]
+offsets = PackedFloat32Array(0, 0.107317, 0.890244, 1)
+colors = PackedColorArray(0, 0, 0, 1, 0.088, 0.0949667, 0.11, 1, 0.83, 0.741467, 0.664, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_kek77"]
+gradient = SubResource("Gradient_g4rod")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1tgdw"]
+shader = ExtResource("5_fwnrf")
+shader_parameter/day_top_color = Color(0.470588, 0.631373, 0.815686, 1)
+shader_parameter/day_bottom_color = Color(0.6, 0.729412, 0.878431, 1)
+shader_parameter/sunset_top_color = Color(0.7, 0.75, 1, 1)
+shader_parameter/sunset_bottom_color = Color(1, 0.564706, 0.388235, 1)
+shader_parameter/night_top_color = Color(0.02, 0, 0.04, 1)
+shader_parameter/night_bottom_color = Color(0.1, 0, 0.2, 1)
+shader_parameter/horizon_color = Color(0, 0, 0, 1)
+shader_parameter/horizon_blur = 0.05
+shader_parameter/sun_color = Color(10, 8, 1, 1)
+shader_parameter/sun_sunset_color = Color(10, 0, 0, 1)
+shader_parameter/sun_size = 0.2
+shader_parameter/sun_blur = 10.0
+shader_parameter/moon_color = Color(1, 0.95, 0.7, 1)
+shader_parameter/moon_size = 0.06
+shader_parameter/moon_blur = 0.1
+shader_parameter/clouds_edge_color = Color(0.705882, 0.788235, 0.937255, 1)
+shader_parameter/clouds_top_color = Color(1, 1, 1, 1)
+shader_parameter/clouds_middle_color = Color(0.878431, 0.890196, 0.929412, 1)
+shader_parameter/clouds_bottom_color = Color(1, 1, 1, 1)
+shader_parameter/clouds_speed = 2.0
+shader_parameter/clouds_direction = 0.2
+shader_parameter/clouds_scale = 3.0
+shader_parameter/clouds_cutoff = 0.3
+shader_parameter/clouds_fuzziness = 0.5
+shader_parameter/clouds_weight = 0.0
+shader_parameter/clouds_blur = 0.25
+shader_parameter/stars_speed = 1.0
+shader_parameter/overwritten_time = 0.0
+
+[sub_resource type="Sky" id="Sky_4c57u"]
+sky_material = SubResource("ShaderMaterial_1tgdw")
+
+[sub_resource type="Environment" id="Environment_3xffd"]
+background_mode = 2
+background_color = Color(0.74902, 0.74902, 0.74902, 1)
+sky = SubResource("Sky_4c57u")
+tonemap_mode = 2
+tonemap_exposure = 0.2
+tonemap_white = 2.0
+ssao_enabled = true
+ssao_radius = 6.0
+ssao_intensity = 3.0
+ssil_enabled = true
+glow_enabled = true
+glow_levels/1 = 1.0
+glow_levels/2 = 1.0
+glow_levels/4 = 1.0
+glow_levels/6 = 1.0
+glow_levels/7 = 1.0
+glow_normalized = true
+glow_intensity = 0.1
+glow_blend_mode = 1
+fog_enabled = true
+fog_sky_affect = 0.0
+volumetric_fog_density = 0.0071
+adjustment_enabled = true
+adjustment_color_correction = SubResource("GradientTexture1D_kek77")
+
+[sub_resource type="NavigationMesh" id="NavigationMesh_gy6s6"]
+vertices = PackedVector3Array(0.5, 0.5, 26.25, 24.75, 0.5, 26.25, 25, 0.5, 25, 27, 0.5, 0.5, 0.5, 0.5, 0.5, 25, 0.5, 25, 27, 0.5, 25, 27, 0.5, 0.5, 27, 0.5, 25, 33, 0.5, 25, 33, 0.5, 0.5, 27, 0.5, 0.5, 33, 0.5, 0.5, 33, 0.5, 25, 35, 0.5, 25, 33, 0.5, 0.5, 35, 0.5, 25, 35.25, 0.5, 26.25, 63.5, 0.5, 26.25, 63.5, 0.5, 0.5, 25, 0.5, 27.25, 24.75, 0.5, 26.25, 0.5, 0.5, 26.25, 0.5, 0.5, 63.5, 26.25, 0.5, 63.5, 26.25, 0.5, 63.5, 26.5, 0.5, 27.25, 25, 0.5, 27.25, 63.5, 0.5, 26.25, 35.25, 0.5, 26.25, 35, 0.5, 27.25, 33.75, 0.5, 63.5, 63.5, 0.5, 63.5, 35, 0.5, 27.25, 33.5, 0.5, 27.25, 33.75, 0.5, 63.5, 26.25, 0.5, 63.5, 33.75, 0.5, 63.5, 33.5, 0.5, 27.25, 26.5, 0.5, 27.25)
+polygons = [PackedInt32Array(1, 0, 2), PackedInt32Array(2, 0, 4), PackedInt32Array(2, 4, 3), PackedInt32Array(7, 6, 5), PackedInt32Array(11, 10, 8), PackedInt32Array(8, 10, 9), PackedInt32Array(14, 13, 12), PackedInt32Array(16, 15, 17), PackedInt32Array(17, 15, 18), PackedInt32Array(18, 15, 19), PackedInt32Array(21, 20, 22), PackedInt32Array(22, 20, 23), PackedInt32Array(23, 20, 24), PackedInt32Array(27, 26, 25), PackedInt32Array(29, 28, 30), PackedInt32Array(30, 28, 32), PackedInt32Array(30, 32, 31), PackedInt32Array(35, 34, 33), PackedInt32Array(39, 38, 36), PackedInt32Array(36, 38, 37)]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n525x"]
+albedo_color = Color(0.2, 0.301961, 0.141176, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_5lgxo"]
+material = SubResource("StandardMaterial3D_n525x")
+
+[sub_resource type="HeightMapShape3D" id="HeightMapShape3D_snh2n"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_7ntq3"]
+
+[node name="Main" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_3xffd")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.412943, -0.906712, -0.0857443, -0.27849, -0.215345, 0.935986, -0.867134, -0.36263, -0.341435, 0, 17.5754, 0)
+light_energy = 4.4
+shadow_enabled = true
+shadow_bias = 0.02
+shadow_reverse_cull_face = true
+
+[node name="DirectionalLight3D2" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.0445975, -0.988357, 0.145471, 0.425291, 0.112979, 0.897977, -0.903957, 0.101915, 0.415301, 0, 17.5754, 0)
+visible = false
+shadow_enabled = true
+shadow_reverse_cull_face = true
+shadow_blur = 2.0
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="DialogueSystemUI" parent="Control" instance=ExtResource("5_f4w8y")]
+visible = false
+layout_mode = 1
+
+[node name="PauseMenuUI" parent="Control" instance=ExtResource("6_q0hal")]
+visible = false
+layout_mode = 1
+
+[node name="PopUpUI" parent="Control" instance=ExtResource("7_movu8")]
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_top = -183.0
+offset_bottom = -183.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Player" parent="." instance=ExtResource("9_5i2wj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.447, 0, 24.09)
+_jumpVelocity = 5.0
+
+[node name="PointOfInterest" parent="." instance=ExtResource("64_n47am")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.111, 0, 29.919)
+_id = "Point0"
+_place = 8
+
+[node name="PointOfInterest2" parent="." instance=ExtResource("64_n47am")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.691, 0, 30.959)
+_id = "Point1"
+_place = 8
+
+[node name="Floor" type="Node3D" parent="."]
+
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="Floor"]
+navigation_mesh = SubResource("NavigationMesh_gy6s6")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Floor/NavigationRegion3D"]
+transform = Transform3D(32, 0, 0, 0, 32, 0, 0, 0, 32, 32, 0, 32)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Floor/NavigationRegion3D/StaticBody3D"]
+mesh = SubResource("PlaneMesh_5lgxo")
+skeleton = NodePath("../../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor/NavigationRegion3D/StaticBody3D"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
+shape = SubResource("HeightMapShape3D_snh2n")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Floor/NavigationRegion3D"]
+transform = Transform3D(9.45, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0.5, 26)
+mesh = SubResource("BoxMesh_7ntq3")
+
+[node name="BullyGirl" parent="." instance=ExtResource("10_461gx")]
+transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 30.082, 0, 23.536)
+_dialogueFilePath = "Dialogues/TestDialogue.json"
+_dialogueFilePath2 = "Dialogues/TestDialogue2.json"
+_sysName = "TestKid1"
+_speed = 1
+
+[node name="kindergarten" parent="." instance=ExtResource("19_82xsv")]
+transform = Transform3D(-1, 0, 1.50996e-07, 0, 1, 0, -1.50996e-07, 0, -1, 49.9246, 0.0318918, 39.5948)
+
+[editable path="Player"]

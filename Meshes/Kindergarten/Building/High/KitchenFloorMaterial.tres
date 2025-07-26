@@ -1,0 +1,20 @@
+[gd_resource type="StandardMaterial3D" load_steps=4 format=3 uid="uid://ba43gwr5i7cc0"]
+
+[ext_resource type="Texture2D" uid="uid://88qaxfl3nh7j" path="res://Meshes/Kindergarten/Building/High/kindergartenSingleMesh_KitchenFloorMat_High_Base-Color.png" id="1_5rrxp"]
+[ext_resource type="Texture2D" uid="uid://dne7f30eqstmu" path="res://Meshes/Kindergarten/Building/High/kindergartenSingleMesh_KitchenFloorMat_High_AORoughMetall.png" id="2_h1bst"]
+[ext_resource type="Texture2D" uid="uid://b50nj6rcbg7jv" path="res://Meshes/Kindergarten/Building/High/kindergartenSingleMesh_KitchenFloorMat_High_Normal.png" id="3_csrbn"]
+
+[resource]
+resource_name = "KitchenFloorMaterial"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_5rrxp")
+metallic = 1.0
+metallic_texture = ExtResource("2_h1bst")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("2_h1bst")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("3_csrbn")
+ao_enabled = true
+ao_texture = ExtResource("2_h1bst")
+uv1_scale = Vector3(8.9, 8.9, 8.9)

@@ -1,0 +1,19 @@
+[gd_resource type="StandardMaterial3D" load_steps=4 format=3 uid="uid://b43ns3qwpdngc"]
+
+[ext_resource type="Texture2D" uid="uid://c83b0gqong2dy" path="res://Meshes/Kindergarten/Office/Cooler/office_coolerblend_WaterBottleMat_Base-Color.png" id="1_khqgq"]
+[ext_resource type="Texture2D" uid="uid://eke2dapbelmd" path="res://Meshes/Kindergarten/Office/Cooler/office_coolerblend_WaterBottleMat_AORoughMetall.png" id="2_v7qr3"]
+[ext_resource type="Texture2D" uid="uid://wo52fq0ohhl8" path="res://Meshes/Kindergarten/Office/Cooler/office_coolerblend_WaterBottleMat_Normal.png" id="3_phtbe"]
+
+[resource]
+resource_name = "WaterBottleMat"
+cull_mode = 2
+albedo_texture = ExtResource("1_khqgq")
+metallic = 1.0
+metallic_texture = ExtResource("2_v7qr3")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("2_v7qr3")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("3_phtbe")
+ao_enabled = true
+ao_texture = ExtResource("2_v7qr3")

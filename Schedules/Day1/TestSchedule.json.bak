@@ -1,0 +1,40 @@
+{
+	"characterName": "TestKid1",
+	"time": [
+		{
+			"timeOfDay": "morning",
+			"performingAction": [
+				{
+					"action": "GoToPoint",
+					"delay": 0,
+					"actionParams":[
+						{
+							"name": "Point0"
+						}
+					]
+				}
+			],
+			"triggers": [
+				{
+					"id": "Locker_0",
+					"action": "StartDialogueAndGoToPlayer"
+				}
+			]
+		},
+		{
+			"timeOfDay": "day",
+			"performingAction": [
+				{
+					"action": "GoToPoint",
+					"delay": 0,
+					"actionParams":[
+						{
+							"name": "Point1"
+						}
+					]
+				}
+			],
+			"triggers": []
+		}
+	]
+}

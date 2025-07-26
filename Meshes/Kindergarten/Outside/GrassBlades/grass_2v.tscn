@@ -1,0 +1,41 @@
+[gd_scene load_steps=4 format=4 uid="uid://shhsckxlhl75"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m7eb6"]
+cull_mode = 2
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.309804, 1, 0.262745, 1)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_hjpq6"]
+_surfaces = [{
+"aabb": AABB(5.29819e-09, 0, -0.034, 1e-05, 0.12, 0.048),
+"format": 34896613377,
+"index_count": 21,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAADAAAABAAFAAMABgAFAAQABgAHAAUACAAHAAYA"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 9,
+"vertex_data": PackedByteArray("XwD/PzLzAABBAAAAAAAAAHkAAAD//wAALAD/P8wMAABGAP9//98AABcA/3//HwAAJAD/v5i5AAAKAP+/ZkYAAAAA////fwAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_qcct8"]
+resource_local_to_scene = true
+resource_name = "Grass2v_Plane"
+_surfaces = [{
+"aabb": AABB(5.29819e-09, 0, -0.034, 1e-05, 0.12, 0.048),
+"attribute_data": PackedByteArray("IgX9v2Zm+v8EAPr/SGH9v9AM/3+aWf9/LBwBQD5KAUA1MwQA"),
+"format": 34896613399,
+"index_count": 21,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAADAAAABAAFAAMABgAFAAQABgAHAAUACAAHAAYA"),
+"material": SubResource("StandardMaterial3D_m7eb6"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 9,
+"vertex_data": PackedByteArray("XwD/PzLz/79BAAAAAAD/v3kAAAD///+/LAD/P8wM/79GAP9//9//vxcA/3//H/+/JAD/v5i5/78KAP+/Zkb/vwAA////f/+//38AAP9/AAD/fwAA/38AAP9/AAD/fwAA/38AAP9/AAD/fwAA")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_hjpq6")
+
+[node name="Grass2V" type="MeshInstance3D"]
+mesh = SubResource("ArrayMesh_qcct8")
+skeleton = NodePath("")

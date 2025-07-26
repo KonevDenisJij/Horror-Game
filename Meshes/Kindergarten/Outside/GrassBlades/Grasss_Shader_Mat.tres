@@ -1,0 +1,11 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3 uid="uid://egkdc8s0jhj6"]
+
+[ext_resource type="Shader" uid="uid://b8cubg2j8oxg0" path="res://Meshes/Kindergarten/Outside/GrassBlades/Grasss_Shader_Mat.gdshader" id="1_thlhh"]
+[ext_resource type="Texture2D" uid="uid://cc2gxty0yclsb" path="res://Meshes/Kindergarten/Outside/GrassBlades/High/GrassBlades_High.png" id="2_bsijd"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_thlhh")
+shader_parameter/character_height = 1.85
+shader_parameter/texture_count = Vector2(1, 1)
+shader_parameter/main_texture = ExtResource("2_bsijd")

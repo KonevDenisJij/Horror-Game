@@ -1,0 +1,19 @@
+[gd_resource type="StandardMaterial3D" load_steps=4 format=3 uid="uid://dfle3o0sc7y01"]
+
+[ext_resource type="Texture2D" uid="uid://b1oixkaigwrdv" path="res://Meshes/Kindergarten/Building/High/kindergartenSingleMesh_MetalLegs_High_Base-Color.png" id="1_nu7v6"]
+[ext_resource type="Texture2D" uid="uid://drg1vffwlu2ha" path="res://Meshes/Kindergarten/Building/High/kindergartenSingleMesh_MetalLegs_High_AORoughMetall.png" id="2_qhn2t"]
+[ext_resource type="Texture2D" uid="uid://dssufaa64jl0o" path="res://Meshes/Kindergarten/Building/High/kindergartenSingleMesh_MetalLegs_High_Normal.png" id="3_q08hu"]
+
+[resource]
+resource_name = "MetalLegs"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_nu7v6")
+metallic = 1.0
+metallic_texture = ExtResource("2_qhn2t")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("2_qhn2t")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("3_q08hu")
+ao_enabled = true
+ao_texture = ExtResource("2_qhn2t")

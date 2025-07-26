@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://cqioo4bhvo4if"]
+
+[ext_resource type="ArrayMesh" uid="uid://bd7oqomwk1mu0" path="res://Meshes/Kindergarten/Restroom/Lamp/restroom_lamp_Cylinder.res" id="1_hjx2a"]
+[ext_resource type="ArrayMesh" uid="uid://bf4ofjx1rtts5" path="res://Meshes/Kindergarten/Restroom/Lamp/restroom_lamp_Sphere-0.res" id="2_ratwp"]
+
+[node name="restroom_lamp" type="Node3D"]
+
+[node name="Cylinder" type="MeshInstance3D" parent="."]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+layers = 524288
+mesh = ExtResource("1_hjx2a")
+skeleton = NodePath("")
+
+[node name="Sphere" type="MeshInstance3D" parent="."]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+layers = 524288
+mesh = ExtResource("2_ratwp")
+skeleton = NodePath("")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0540645, 0)
+light_energy = 4.0
+shadow_enabled = true
+shadow_caster_mask = 4294443007
+omni_range = 7.0

@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://2g15op3rwid0"]
+
+[ext_resource type="ArrayMesh" uid="uid://cytqkg2gt6jbu" path="res://Meshes/Kindergarten/Restroom/Stool/restroom_stool_Cube-0.res" id="1_p1l45"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jckf2"]
+size = Vector3(0.4, 0.3, 0.3)
+
+[node name="restroom_stool" type="Node3D"]
+
+[node name="Stool" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_p1l45")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.15, 0)
+shape = SubResource("BoxShape3D_jckf2")

@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://ckcanw0ebkoy8"]
+
+[ext_resource type="ArrayMesh" uid="uid://bwo818prt1e2f" path="res://Meshes/Kindergarten/Office/Plant/office_plant_Cylinder-0.res" id="1_8ywiv"]
+
+[node name="office_plant" type="Node3D"]
+
+[node name="PlantPot" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_8ywiv")
+skeleton = NodePath("")

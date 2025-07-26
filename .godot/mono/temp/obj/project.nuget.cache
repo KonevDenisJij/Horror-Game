@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "1LyR7a5qPUjufPBsgMK/UC4uupZufNNZRLfbpAg/rO9BNmOTHVz5CDoh9AfAheKa2hZLNIaH8Rkndtgg7WzEiA==",
+  "success": true,
+  "projectFilePath": "C:\\USERS\\MEGAH\\DOCUMENTS\\GODOT\\HORRORGAME2\\HorrorGame2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\megah\\.nuget\\packages\\godot.sourcegenerators\\4.4.0\\godot.sourcegenerators.4.4.0.nupkg.sha512",
+    "C:\\Users\\megah\\.nuget\\packages\\godotsharp\\4.4.0\\godotsharp.4.4.0.nupkg.sha512",
+    "C:\\Users\\megah\\.nuget\\packages\\godotsharpeditor\\4.4.0\\godotsharpeditor.4.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}

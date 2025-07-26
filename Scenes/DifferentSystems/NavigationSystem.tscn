@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://3me3p82cwtuy"]
+
+[sub_resource type="CSharpScript" id="CSharpScript_1py16"]
+script/source = "using Godot;
+using System;
+
+public partial class NavigationSystem : Node3D
+{
+}
+"
+
+[node name="NavigationSystem" type="Node3D"]
+script = SubResource("CSharpScript_1py16")

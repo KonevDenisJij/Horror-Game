@@ -1,0 +1,16 @@
+[gd_resource type="StandardMaterial3D" load_steps=4 format=3 uid="uid://bc4o5wnjlk2xq"]
+
+[ext_resource type="Texture2D" uid="uid://bi5aipxoh3fnu" path="res://Meshes/BullyGirl/BullyGirlMixamo_BullyGirlTexture.png" id="1_3krf4"]
+[ext_resource type="Texture2D" uid="uid://cqjo4i6qo3o0" path="res://Meshes/BullyGirl/BullyGirlMixamo_BullyGirlTextureRoughness.png" id="2_106gw"]
+[ext_resource type="Texture2D" uid="uid://cbm7wgu0ykftn" path="res://Meshes/BullyGirl/BullyGirlMixamo_BullyGirlTextureNormal.png" id="3_mnkjb"]
+
+[resource]
+resource_name = "MAT_BullyGirl"
+cull_mode = 2
+albedo_texture = ExtResource("1_3krf4")
+metallic_texture = ExtResource("2_106gw")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("2_106gw")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("3_mnkjb")

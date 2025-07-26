@@ -1,0 +1,20 @@
+[gd_resource type="StandardMaterial3D" load_steps=4 format=3 uid="uid://rm7sltuqhl4p"]
+
+[ext_resource type="Texture2D" uid="uid://6225rbyn7ekm" path="res://Meshes/Kindergarten/Restroom/Toilet/High/toilet_Pipe_Mat_High_Base-Color.png" id="1_fpyxq"]
+[ext_resource type="Texture2D" uid="uid://b7cv8ybau6ht8" path="res://Meshes/Kindergarten/Restroom/Toilet/High/toilet_Pipe_Mat_High_AORoughMetall.png" id="2_bqugf"]
+[ext_resource type="Texture2D" uid="uid://cq6a1i8o133aq" path="res://Meshes/Kindergarten/Restroom/Toilet/High/toilet_Pipe_Mat_High_Normal.png" id="3_2ndyg"]
+
+[resource]
+resource_name = "Pipe_Mat"
+cull_mode = 2
+albedo_color = Color(0.906332, 0.906332, 0.906332, 1)
+albedo_texture = ExtResource("1_fpyxq")
+metallic = 1.0
+metallic_texture = ExtResource("2_bqugf")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("2_bqugf")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("3_2ndyg")
+ao_enabled = true
+ao_texture = ExtResource("2_bqugf")

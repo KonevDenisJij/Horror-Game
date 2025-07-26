@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://c2f04qfhnn3hf"]
+
+[ext_resource type="ArrayMesh" uid="uid://tpce248lvafu" path="res://Meshes/Kindergarten/Office/Cooler/office_cooler_Cylinder-0.res" id="1_bke37"]
+[ext_resource type="ArrayMesh" uid="uid://dscxk2c4ni4qm" path="res://Meshes/Kindergarten/Office/Cooler/office_cooler_Cylinder_002.res" id="2_wm0b0"]
+[ext_resource type="ArrayMesh" uid="uid://brkq7e6cppfmm" path="res://Meshes/Kindergarten/Office/Cooler/office_cooler_Cube_002.res" id="3_n8s4f"]
+[ext_resource type="ArrayMesh" uid="uid://b3uj7ka3yo6y3" path="res://Meshes/Kindergarten/Office/Cooler/office_cooler_Cube_003.res" id="4_io622"]
+
+[node name="office_cooler" type="Node3D"]
+
+[node name="WaterBottle" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.13, 0)
+mesh = ExtResource("1_bke37")
+skeleton = NodePath("")
+
+[node name="Base" type="MeshInstance3D" parent="."]
+mesh = ExtResource("2_wm0b0")
+skeleton = NodePath("")
+
+[node name="HotSwitch" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0599999, 0.684, 0.160876)
+mesh = ExtResource("3_n8s4f")
+skeleton = NodePath("")
+
+[node name="ColdSwitch" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0599999, 0.684, 0.160876)
+mesh = ExtResource("4_io622")
+skeleton = NodePath("")

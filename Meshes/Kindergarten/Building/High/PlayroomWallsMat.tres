@@ -1,0 +1,20 @@
+[gd_resource type="StandardMaterial3D" load_steps=4 format=3 uid="uid://q4j3t8t773pu"]
+
+[ext_resource type="Texture2D" uid="uid://d0yyo8fy3ta5d" path="res://Meshes/Kindergarten/Building/High/kindergartenSingleMesh_PlayroomWallsMat_High_Base-Color.png" id="1_knihj"]
+[ext_resource type="Texture2D" uid="uid://dkbwhj3c4ayxn" path="res://Meshes/Kindergarten/Building/High/kindergartenSingleMesh_PlayroomWallsMat_High_AORoughMetall.png" id="2_jpbf6"]
+[ext_resource type="Texture2D" uid="uid://byd8lcbswtgd5" path="res://Meshes/Kindergarten/Building/High/kindergartenSingleMesh_PlayroomWallsMat_High_Normal.png" id="3_16mo5"]
+
+[resource]
+resource_name = "PlayroomWallsMat"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_knihj")
+metallic = 1.0
+metallic_texture = ExtResource("2_jpbf6")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("2_jpbf6")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("3_16mo5")
+ao_enabled = true
+ao_texture = ExtResource("2_jpbf6")
+uv1_scale = Vector3(16, 16, 16)

@@ -1,0 +1,112 @@
+[gd_scene load_steps=2 format=3 uid="uid://8kqe8kamoe8g"]
+
+[ext_resource type="Script" uid="uid://dpgqi4np20ex2" path="res://Scripts/UI/PauseMenu/SettingsUI.cs" id="1_ktwl2"]
+
+[node name="SettingsUI" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_ktwl2")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 710.0
+offset_top = 280.0
+offset_right = 1170.0
+offset_bottom = 760.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.384314, 0.513726, 0.580392, 0.313726)
+
+[node name="TextureQuality" type="Control" parent="ColorRect"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureQualityText" type="Label" parent="ColorRect/TextureQuality"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 40.0
+offset_right = 160.0
+offset_bottom = 63.0
+text = "Texture Quality"
+
+[node name="TextureQualityOptionButton" type="OptionButton" parent="ColorRect/TextureQuality"]
+layout_mode = 0
+offset_left = 220.0
+offset_top = 40.0
+offset_right = 420.0
+offset_bottom = 71.0
+item_count = 3
+popup/item_0/text = "Good"
+popup/item_0/id = 0
+popup/item_1/text = "Normal"
+popup/item_1/id = 1
+popup/item_2/text = "Bad"
+popup/item_2/id = 2
+
+[node name="SoundVolume" type="Control" parent="ColorRect"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="SoundVolumeText" type="Label" parent="ColorRect/SoundVolume"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 100.0
+offset_right = 160.0
+offset_bottom = 123.0
+scale = Vector2(1, 0.991991)
+text = "Sound Volume"
+
+[node name="SoundVolumeSlider" type="HSlider" parent="ColorRect/SoundVolume"]
+layout_mode = 0
+offset_left = 220.0
+offset_top = 100.0
+offset_right = 420.0
+offset_bottom = 120.0
+
+[node name="MusicVolume" type="Control" parent="ColorRect"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="MusicVolumeText" type="Label" parent="ColorRect/MusicVolume"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 160.0
+offset_right = 160.0
+offset_bottom = 183.0
+scale = Vector2(1, 0.991991)
+text = "Music Volume"
+
+[node name="MusicVolumeSlider" type="HSlider" parent="ColorRect/MusicVolume"]
+layout_mode = 0
+offset_left = 220.0
+offset_top = 160.0
+offset_right = 420.0
+offset_bottom = 180.0
+
+[node name="BackButton" type="Button" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -60.0
+offset_top = 150.0
+offset_right = 60.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Back"
+
+[connection signal="button_up" from="ColorRect/BackButton" to="." method="OnBackButtonUp"]

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://xubwhka52sec"]
+
+[ext_resource type="Script" path="res://Scripts/Character/NPC/NpcsHolder.cs" id="1_ts287"]
+
+[node name="NpcsHolder" type="Node3D"]
+script = ExtResource("1_ts287")

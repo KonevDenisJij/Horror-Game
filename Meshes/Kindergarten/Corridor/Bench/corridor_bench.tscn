@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://c8pkeytqsgj88"]
+
+[ext_resource type="ArrayMesh" uid="uid://c5t7smbf4vue5" path="res://Meshes/Kindergarten/Corridor/Bench/corridor_bench_Cube-0.res" id="1_g52hc"]
+
+[node name="corridor_bench" type="Node3D"]
+
+[node name="Bench" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, 0)
+mesh = ExtResource("1_g52hc")
+skeleton = NodePath("")

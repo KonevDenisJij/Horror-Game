@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://d3km7tkmrjd47"]
+
+[ext_resource type="Script" uid="uid://csxnib0l4y65r" path="res://Scripts/Character/NPC/NPC.cs" id="1_6veeq"]
+[ext_resource type="ArrayMesh" uid="uid://b2b0thw3scyu2" path="res://Meshes/uploads_files_4106898_Asian+Boy.obj" id="2_qxlmj"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_j57yw"]
+radius = 0.3
+height = 1.1
+
+[node name="NPC" type="CharacterBody3D" node_paths=PackedStringArray("_navigationAgent")]
+collision_layer = 8
+collision_mask = 15
+script = ExtResource("1_6veeq")
+_navigationAgent = NodePath("NavigationAgent3D")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.55, 0)
+shape = SubResource("CapsuleShape3D_j57yw")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.5, 0, -4.37114e-08, 0, 0.5, 0, 4.37114e-08, 0, -0.5, 0, 0, 0)
+mesh = ExtResource("2_qxlmj")
+
+[node name="RotationHelper" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.925, 0)
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+path_desired_distance = 0.25
+target_desired_distance = 0.25
+path_height_offset = 0.25
+debug_enabled = true

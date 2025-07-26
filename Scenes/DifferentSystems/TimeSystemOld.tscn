@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dpai04w2dp7ds"]
+
+[ext_resource type="Script" path="res://Scripts/DifferentSystems/TimeSystem.cs" id="1_yhw8k"]
+
+[node name="TimeSystem" type="Node3D"]
+script = ExtResource("1_yhw8k")

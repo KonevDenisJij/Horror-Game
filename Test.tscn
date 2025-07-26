@@ -1,0 +1,51 @@
+[gd_scene load_steps=11 format=3 uid="uid://d1f1f416kvw0y"]
+
+[ext_resource type="PackedScene" uid="uid://crxkolci23ofe" path="res://Scenes/DialogueSystem/DialogueSystemOld.tscn" id="1_5buq8"]
+[ext_resource type="PackedScene" uid="uid://cm4m3v4icyolg" path="res://Scenes/Player/Player.tscn" id="1_xwojj"]
+[ext_resource type="PackedScene" uid="uid://oxotukt6rd5p" path="res://Scenes/DifferentSystems/MouseModeController.tscn" id="2_ag6f3"]
+[ext_resource type="PackedScene" uid="uid://cemw16hj47gkg" path="res://Meshes/Kindergarten/Restroom/Mirror/Mirror.tscn" id="2_b8ccj"]
+[ext_resource type="PackedScene" uid="uid://wmewr4nntj0s" path="res://Scenes/Menu/PauseMenu.tscn" id="3_drifr"]
+[ext_resource type="Environment" uid="uid://c64sjceegxqkp" path="res://Sky/Environment2_VolumeClouds.tres" id="6_1o40c"]
+[ext_resource type="PackedScene" uid="uid://bjd0gw3hrjkq2" path="res://locker.tscn" id="7_n82qd"]
+
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_gayxp"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ak4tq"]
+albedo_color = Color(0.235294, 0.47451, 0.164706, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_vu85u"]
+material = SubResource("StandardMaterial3D_ak4tq")
+size = Vector2(20, 20)
+
+[node name="Node3D" type="Node3D"]
+
+[node name="DialogueSystem" parent="." instance=ExtResource("1_5buq8")]
+
+[node name="MouseModeController" parent="." instance=ExtResource("2_ag6f3")]
+
+[node name="PauseMenu" parent="." instance=ExtResource("3_drifr")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("WorldBoundaryShape3D_gayxp")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+mesh = SubResource("PlaneMesh_vu85u")
+skeleton = NodePath("../..")
+
+[node name="Player" parent="." instance=ExtResource("1_xwojj")]
+transform = Transform3D(-0.4602, 0, -0.887815, 0, 1, 0, 0.887815, 0, -0.4602, 2.592, 0, -1.974)
+
+[node name="Mirror" parent="." instance=ExtResource("2_b8ccj")]
+transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, 5.165, 0, 0)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = ExtResource("6_1o40c")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.866025, 2.18557e-08, -0.5, 0.5, -3.78552e-08, 0.866025, 0, -1, -4.37114e-08, -13, 5, 0)
+
+[node name="Locker2" parent="." instance=ExtResource("7_n82qd")]
+
+[editable path="Player"]
